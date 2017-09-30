@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: 4a4465062b353db4f85c62a4a88857d5
+timeCreated: 1471784240
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: map_city_0
+    21300002: map_city_1
+    21300004: map_city_2
+    21300006: map_city_3
+    21300008: map_city_4
+    21300010: map_city_5
+    21300012: map_city_6
+    21300014: map_city_7
+    21300016: map_city_8
+    21300018: map_city_9
+    21300020: map_city_10
+    21300022: map_city_11
+    21300024: map_city_12
+    21300026: map_city_13
+    21300028: map_city_14
+    21300030: map_city_15
+    21300032: map_city_16
+    21300034: map_city_17
+    21300036: map_city_18
+    21300038: map_city_19
+    21300040: map_city_20
+    21300042: map_city_21
+    21300044: map_city_22
+    21300046: map_city_23
+    21300048: map_city_24
+    21300050: map_city_25
+    21300052: map_city_26
+    21300054: map_city_27
+    21300056: map_city_28
+    21300058: map_city_29
+    21300060: map_city_30
+    21300062: map_city_31
+    21300064: map_city_32
+    21300066: map_city_33
+    21300068: map_city_34
+    21300070: map_city_35
+    21300072: map_city_36
+    21300074: map_city_37
+    21300076: map_city_38
+    21300078: map_city_39
+    21300080: map_city_40
+    21300082: map_city_41
+    21300084: map_city_42
+    21300086: map_city_43
+    21300088: map_city_44
+    21300090: map_city_45
+    21300092: map_city_46
+    21300094: map_city_47
+    21300096: map_city_48
+    21300098: map_city_49
+    21300100: map_city_50
+    21300102: map_city_51
+    21300104: map_city_52
+    21300106: map_city_53
+    21300108: map_city_54
+    21300110: map_city_55
+    21300112: map_city_56
+    21300114: map_city_57
+    21300116: map_city_58
+    21300118: map_city_59
+    21300120: map_city_60
+    21300122: map_city_61
+    21300124: map_city_62
+    21300126: map_city_63
+    21300128: map_city_64
+    21300130: map_city_65
+    21300132: map_city_66
+    21300134: map_city_67
+    21300136: map_city_68
+    21300138: map_city_69
+    21300140: map_city_70
+    21300142: map_city_71
+    21300144: map_city_72
+    21300146: map_city_73
+    21300148: map_city_74
+    21300150: map_city_75
+    21300152: map_city_76
+    21300154: map_city_77
+    21300156: map_city_78
+    21300158: map_city_79
+    21300160: map_city_80
+    21300162: map_city_81
+    21300164: map_city_82
+    21300166: map_city_83
+    21300168: map_city_84
+    21300170: map_city_85
+    21300172: map_city_86
+    21300174: map_city_87
+    21300176: map_city_88
+    21300178: map_city_89
+    21300180: map_city_90
+    21300182: map_city_91
+    21300184: map_city_92
+    21300186: map_city_93
+    21300188: map_city_94
+    21300190: map_city_95
+    21300192: map_city_96
+    21300194: map_city_97
+    21300196: map_city_98
+    21300198: map_city_99
+    21300200: map_city_100
+    21300202: map_city_101
+    21300204: map_city_102
+    21300206: map_city_103
+    21300208: map_city_104
+    21300210: map_city_105
+    21300212: map_city_106
+    21300214: map_city_107
+    21300216: map_city_108
+    21300218: map_city_109
+    21300220: map_city_110
+    21300222: map_city_111
+    21300224: map_city_112
+    21300226: map_city_113
+    21300228: map_city_114
+    21300230: map_city_115
+    21300232: map_city_116
+    21300234: map_city_117
+    21300236: map_city_118
+    21300238: map_city_119
+    21300240: map_city_120
+    21300242: map_city_121
+    21300244: map_city_122
+    21300246: map_city_123
+    21300248: map_city_124
+    21300250: map_city_125
+    21300252: map_city_126
+    21300254: map_city_127
+    21300256: map_city_128
+    21300258: map_city_129
+    21300260: map_city_130
+    21300262: map_city_131
+    21300264: map_city_132
+    21300266: map_city_133
+    21300268: map_city_134
+    21300270: map_city_135
+    21300272: map_city_136
+    21300274: map_city_137
+    21300276: map_city_138
+    21300278: map_city_139
+    21300280: map_city_140
+    21300282: map_city_141
+    21300284: map_city_142
+    21300286: map_city_143
+    21300288: map_city_144
+    21300290: map_city_145
+    21300292: map_city_146
+    21300294: map_city_147
+    21300296: map_city_148
+    21300298: map_city_149
+    21300300: map_city_150
+    21300302: map_city_151
+    21300304: map_city_152
+    21300306: map_city_153
+    21300308: map_city_154
+    21300310: map_city_155
+    21300312: map_city_156
+    21300314: map_city_157
+    21300316: map_city_158
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: 2
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: 2
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: 2
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: map_city_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_10
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_34
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: map_city_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

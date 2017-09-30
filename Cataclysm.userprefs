@@ -1,0 +1,59 @@
+﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CharacterBase.cs">
+    <Files>
+      <File FileName="Assets\Scripts\PlasmaGunController.cs" Line="31" Column="13" />
+      <File FileName="Assets\Scripts\LaserRifleController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CharacterBase.cs" Line="143" Column="44" />
+      <File FileName="Assets\Scripts\Constants\LayerNames.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Contracts\IDamageable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BadguyController.cs" Line="24" Column="36" />
+      <File FileName="Assets\Scripts\BulletController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LaserShotController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerSettingsRepository.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DifficultyRepository.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GeneralScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LevelRepository.cs" Line="24" Column="58" />
+      <File FileName="Assets\Scripts\MenuController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShotgunController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Constants\ResourceNames.cs" Line="15" Column="38" />
+      <File FileName="Assets\Scripts\PlasmaShotController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="33" Column="59" />
+      <File FileName="Assets\Scripts\EnemyPodController.cs" Line="48" Column="41" />
+      <File FileName="Assets\Scripts\BadguySpawnLocation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpawnLocation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerSpawnLocation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TeleportController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Level.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerPodController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameState.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameRules.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UIScrollRectSnap.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RocketLauncherController.cs" Line="6" Column="30" />
+      <File FileName="Assets\Scripts\RocketController.cs" Line="6" Column="37" />
+      <File FileName="Assets\Scripts\ExplosionController.cs" Line="12" Column="17" />
+      <File FileName="Assets\Scripts\RicochetController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Cataclysm" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Constants" expanded="True" />
+                <Node name="CharacterBase.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
