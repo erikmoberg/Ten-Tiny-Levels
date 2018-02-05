@@ -24,6 +24,7 @@ public class MenuController : MonoBehaviour {
 
     public UIScrollRectSnap deathmatchWeaponSelection1;
     public UIScrollRectSnap deathmatchWeaponSelection2;
+    private string defaultWeapon = "Smg";
 
     // Use this for initialization
     void Start () 
@@ -80,26 +81,54 @@ public class MenuController : MonoBehaviour {
     public void StartSinglePlayerGame()
     {
         this.PlayButtonPressedAudio();
-        PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon = this.weaponSelection.currentOption;
+        if (!string.IsNullOrEmpty(this.weaponSelection.currentOption))
+        {
+            PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon = this.weaponSelection.currentOption;
+        }
+        else
+        {
+            PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon = "Smg";
+        }
+
         GameState.GameMode = GameMode.SinglePlayer;
-        GameState.Difficulty = (Difficulty)System.Enum.Parse(typeof(Difficulty), this.difficultySelection.currentOption);
+
+        if (!string.IsNullOrEmpty(this.difficultySelection.currentOption))
+        {
+            GameState.Difficulty = (Difficulty)System.Enum.Parse(typeof(Difficulty), this.difficultySelection.currentOption);
+        }
+        else
+        {
+            GameState.Difficulty = Difficulty.Easy;
+        }
+
         PlayerSettingsRepository.PlayerOneSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
         var level = 1;
+        GameState.Score = 0;
         int.TryParse(this.levelSelection.currentOption, out level);
-        GameState.CurrentLevel = level - 1;
+        GameState.CurrentLevel = Math.Max(0, level - 1);
         SceneManager.LoadScene(LevelRepository.AllLevels[GameState.CurrentLevel].SceneName);
     }
 
     public void StartCoopGame()
     {
         this.PlayButtonPressedAudio();
-        PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon = this.coopWeaponSelection1.currentOption;
-        PlayerSettingsRepository.PlayerTwoSettings.SelectedWeapon = this.coopWeaponSelection2.currentOption;
+        PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon = string.IsNullOrEmpty(this.coopWeaponSelection1.currentOption) ? this.defaultWeapon : this.coopWeaponSelection1.currentOption;
+        PlayerSettingsRepository.PlayerTwoSettings.SelectedWeapon = string.IsNullOrEmpty(this.coopWeaponSelection2.currentOption) ? this.defaultWeapon : this.coopWeaponSelection2.currentOption;
         GameState.GameMode = GameMode.TwoPlayerCoop;
-        GameState.Difficulty = (Difficulty)System.Enum.Parse(typeof(Difficulty), this.coopdifficultySelection.currentOption);
+
+        if (!string.IsNullOrEmpty(this.coopdifficultySelection.currentOption))
+        {
+            GameState.Difficulty = (Difficulty)System.Enum.Parse(typeof(Difficulty), this.coopdifficultySelection.currentOption);
+        }
+        else
+        {
+            GameState.Difficulty = Difficulty.Easy;
+        }
+
         PlayerSettingsRepository.PlayerOneSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
         PlayerSettingsRepository.PlayerTwoSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
         GameState.CurrentLevel = 0;
+        GameState.Score = 0;
         SceneManager.LoadScene(LevelRepository.AllLevels[GameState.CurrentLevel].SceneName);
     }
 
@@ -107,8 +136,8 @@ public class MenuController : MonoBehaviour {
     {
         this.PlayButtonPressedAudio();
         LevelRepository.Randomize();
-        PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon = this.deathmatchWeaponSelection1.currentOption;
-        PlayerSettingsRepository.PlayerTwoSettings.SelectedWeapon = this.deathmatchWeaponSelection2.currentOption;
+        PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon = string.IsNullOrEmpty(this.deathmatchWeaponSelection1.currentOption) ? this.defaultWeapon : this.deathmatchWeaponSelection1.currentOption;
+        PlayerSettingsRepository.PlayerTwoSettings.SelectedWeapon = string.IsNullOrEmpty(this.deathmatchWeaponSelection2.currentOption) ? this.defaultWeapon : this.deathmatchWeaponSelection2.currentOption;
         GameState.GameMode = GameMode.TwoPlayerDeathmatch;
         PlayerSettingsRepository.PlayerOneSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
         PlayerSettingsRepository.PlayerTwoSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();

@@ -90,7 +90,7 @@ public class BadguyController : CharacterBase {
         this.defaultSpriteSheet = Resources.LoadAll<Sprite>(this.CanJump ? "yellow_bad_guy" : "green_bad_guy" ).ToDictionary(x => x.name, x => x);
         this.aggressiveSpriteSheet = Resources.LoadAll<Sprite>("red_bad_guy").ToDictionary(x => x.name, x => x);
         this.spriteSheetToUse = this.defaultSpriteSheet;
-        this.InstantiateWeapon(this.WeaponName);
+        this.InstantiateWeapon(this.WeaponName, false);
         this.timeUntilMoveActionSeconds = this.timeUntilMoveActionSeconds / 2 + UnityEngine.Random.Range(0, timeUntilMoveActionSeconds);
 
         this.playerDamager = transform.Find("PlayerDamager").GetComponent<BoxCollider2D>();
@@ -99,7 +99,7 @@ public class BadguyController : CharacterBase {
         {
             var podInstance = Instantiate(Resources.Load<GameObject>(ResourceNames.BadguyPod), this.transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as GameObject;
             podInstance.GetComponent<Rigidbody2D>().AddForce(new Vector2(UnityEngine.Random.Range(-10000, 10000), UnityEngine.Random.Range(5000, 10000)));
-            podInstance.GetComponent<EnemyPodController>().SetWeapon(this.WeaponName);
+            podInstance.GetComponent<EnemyPodController>().Weapon = this.WeaponName;
         };
 
         base.Start();
@@ -235,5 +235,10 @@ public class BadguyController : CharacterBase {
     public void LateUpdate()
     {
         this.spriteRenderer.sprite = this.spriteSheetToUse[this.spriteRenderer.sprite.name];
+    }
+
+    protected override void TouchedPod(EnemyPodController pod)
+    {
+        // do nothing
     }
 }

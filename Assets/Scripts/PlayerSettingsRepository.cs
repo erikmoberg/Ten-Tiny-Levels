@@ -7,7 +7,7 @@ public static class PlayerSettingsRepository
         {
             ProjectileLayer = LayerNames.Player1Projectiles,
             Layer = LayerMask.NameToLayer(LayerNames.Player),
-            SelectedWeapon = "Rocket Launcher",
+            SelectedWeapon = "Smg",
             JumpKey = "up",
             DropKey = "down",
             LeftKey = "left",

@@ -45,6 +45,8 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
 
     protected bool isStunned;
 
+    private int jumpOnHeadDamage = 8;
+
     [HideInInspector]
     public int NumberOfLives
     {
@@ -77,13 +79,25 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
         }
     }
 
-    public void InstantiateWeapon(string weaponName)
+    public void InstantiateWeapon(string weaponName, bool flip)
     {
+        if (flip)
+        {
+            // set the player facing right so that the weapon is correctly positioned...
+            this.Flip();
+        }
+
         var gunResource = Resources.Load<GameObject>(weaponName);
         var gunPosition = new Vector3(this.transform.position.x + gunResource.transform.position.x, this.transform.position.y + gunResource.transform.position.y, this.transform.position.z);
         this.weapon = Instantiate(gunResource, gunPosition, Quaternion.Euler(new Vector3(0, 0, 0))) as GameObject;
         weapon.GetComponent<SpriteRenderer>().sortingLayerID = this.GetComponent<SpriteRenderer>().sortingLayerID;
         weapon.transform.parent = this.gameObject.transform;
+
+        if (flip)
+        {
+            // ... then turn back around.
+            this.Flip();
+        }
     }
 
 	public void Flip ()
@@ -191,9 +205,8 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
     IEnumerator Stun(int damage, bool fromRight)
     {
         this.isStunned = true;
-        var horizontalForce = 200;
-        var verticalForce = 100;
-        this.rigidBody.AddForce(new Vector2(fromRight ? -horizontalForce : horizontalForce, verticalForce));
+        var opposite = -this.rigidBody.velocity.x;
+        this.rigidBody.AddForce(Vector2.right * opposite * 50);
         yield return new WaitForSeconds(0.5f);
         this.isStunned = false;
     }
@@ -323,17 +336,22 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
                 var damageable = col.GetComponent<IDamageable>();
                 if (damageable != null)
                 {
-                    this.rigidBody.AddForce(Vector2.up * 3000);
-                    damageable.AddDamage(int.MaxValue, false);
+                    var opposite = -this.rigidBody.velocity.y;
+                    this.rigidBody.AddForce(Vector2.up * opposite * 90);
+                    damageable.AddDamage(this.jumpOnHeadDamage, false);
                 }
             }
         }
 
         if (col.tag == TagNames.Badguy && col.gameObject.GetComponent<EnemyPodController>())
         {
-            col.gameObject.GetComponent<EnemyPodController>().Touch();
+            var pod = col.gameObject.GetComponent<EnemyPodController>();
+            pod.Touch();
+            this.TouchedPod(pod);
         }
     }
+
+    protected abstract void TouchedPod(EnemyPodController pod);
 
     private void UpdateHealthBar()
     {

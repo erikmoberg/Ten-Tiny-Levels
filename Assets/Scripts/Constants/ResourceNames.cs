@@ -20,6 +20,8 @@ public class ResourceNames
 
     public const string DeathParticleSystemBadguy = "Death particles badguy";
 
+    public const string TouchPodParticleSystem = "Touch pod";
+
     public const string LifeIcon = "Life";
 
     public static string Badguy = "Badguy";
@@ -28,7 +30,7 @@ public class ResourceNames
 
     public static string PlasmaShot = "PlasmaShot";
 
-    public static string BadguyPod = "Badguy pod";
+    public static string BadguyPod = "Badguy pod 2";
 
     public static string PlayerPod = "Player pod";
 

@@ -95,7 +95,7 @@ public class PlayerController : CharacterBase {
             }
         };
 
-        this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon);
+        this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon, false);
 
         this.spriteSheet = Resources.LoadAll<Sprite>(this.PlayerSettings.SpriteSheet).ToDictionary(x => x.name, x => x);
 
@@ -146,7 +146,7 @@ public class PlayerController : CharacterBase {
             index = (index + 1) % weapons.Length;
             GameObject.Destroy(this.weapon);
             this.PlayerSettings.SelectedWeapon = weapons.ElementAt(index);
-            this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon);
+            this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon, !this.isFacingRight);
         }
 
         if (Input.GetKey(KeyCode.J))
@@ -223,5 +223,12 @@ public class PlayerController : CharacterBase {
     void LateUpdate()
     {
         this.spriteRenderer.sprite = this.spriteSheet[this.spriteRenderer.sprite.name];
+    }
+
+    protected override void TouchedPod(EnemyPodController pod)
+    {
+        GameObject.Destroy(this.weapon);
+        this.PlayerSettings.SelectedWeapon = pod.Weapon;
+        this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon, !this.isFacingRight);
     }
 }

@@ -16,8 +16,8 @@ public class MenuBackgroundController : MonoBehaviour {
         this.verticalPositionTarget = this.image.rectTransform.rect.height / 4;
         this.secondsToLerp = 10;
         this.startTime = Time.time;
-        this.startMarkerPosition = this.transform.position;
-        this.endMarkerPosition = new Vector2(0, this.verticalPositionTarget);
+        this.startMarkerPosition = new Vector2(0, this.verticalPositionTarget);
+        this.endMarkerPosition = this.transform.position; 
         var v = this.transform.localScale;
         v.Set(2, 2, 2);
         this.transform.localScale = v;

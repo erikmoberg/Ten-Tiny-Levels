@@ -30,6 +30,7 @@ public class PauseButtonController : MonoBehaviour {
 
     public void PauseGame()
     {
+        GameState.HasClickedGui = true;
         this.SetImage("play");
         Time.timeScale = 0;
         this.pauseMenu.SetActive(true);
@@ -37,6 +38,7 @@ public class PauseButtonController : MonoBehaviour {
 
     public void ResumeGame()
     {
+        GameState.HasClickedGui = false;
         this.SetImage("pause");
         Time.timeScale = 1;
         this.pauseMenu.SetActive(false);
@@ -44,6 +46,7 @@ public class PauseButtonController : MonoBehaviour {
 
     public void GoToMenu()
     {
+        GameState.HasClickedGui = false;
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneNames.Menu);
     }

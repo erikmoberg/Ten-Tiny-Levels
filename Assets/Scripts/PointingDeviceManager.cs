@@ -34,15 +34,15 @@ public class PointingDeviceManager : MonoBehaviour
         //    }
         //}
 
-        //if (Player1Data.IsPressing)
-        //{
-        //    this.HandleMove(Input.mousePosition, Player1Data);
-        //}
+        if (Player1Data.IsPressing)
+        {
+            this.HandleMove(Input.mousePosition, Player1Data);
+        }
 
-        //if (Player2Data.IsPressing)
-        //{
-        //    this.HandleMove(Input.mousePosition, Player2Data);
-        //}
+        if (Player2Data.IsPressing)
+        {
+            this.HandleMove(Input.mousePosition, Player2Data);
+        }
 
         if (Input.touches.Length > 0)
         {
@@ -93,13 +93,19 @@ public class PointingDeviceManager : MonoBehaviour
 
     void HandleStartPress(Vector2 position, int fingerId)
     {
+        var worldPosition = ScreenPositionToWorld1(position);
+        if (worldPosition.y > 7 || GameState.HasClickedGui)
+        {
+            // the user clicked the pause menu, do nothing
+            return;
+        }
+
         PointingDeviceData data = null;
         if (GameState.GameMode == GameMode.TwoPlayerDeathmatch || GameState.GameMode == GameMode.TwoPlayerCoop)
         {
             var players = GameObject.FindGameObjectsWithTag(TagNames.Player);
             var shortestDistance = float.MaxValue;
             PointingDeviceData pointingDeviceData = null;
-            var worldPosition = ScreenPositionToWorld1(position);
             foreach (var player in players)
             {
                 var distance = Vector2.Distance(player.transform.position, worldPosition);

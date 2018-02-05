@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 public class GameOverController : MonoBehaviour
 {
     private bool canProceed = false;
+    public UnityEngine.UI.Text scoreText;
 
     void Start()
     {
+        this.scoreText.text = "SCORE: " + GameState.Score;
         StartCoroutine(SetProceed());
     }
 
@@ -37,6 +39,7 @@ public class GameOverController : MonoBehaviour
         PlayerSettingsRepository.PlayerOneSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
         PlayerSettingsRepository.PlayerTwoSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
         GameState.CurrentLevel = 0;
+        GameState.Score = 0;
         SceneManager.LoadScene(LevelRepository.AllLevels[GameState.CurrentLevel].SceneName);
     }
 }
