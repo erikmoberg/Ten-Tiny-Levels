@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 12
+  controlID: 48
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 13
+  controlID: 49
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 14
+  controlID: 50
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -340,10 +340,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -156.25
-    m_HBaseRangeMax: 156.25
-    m_VBaseRangeMin: -250
-    m_VBaseRangeMax: 250
+    m_HBaseRangeMin: -540
+    m_HBaseRangeMax: 540
+    m_VBaseRangeMin: -960
+    m_VBaseRangeMax: 960
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -375,7 +375,7 @@ MonoBehaviour:
       width: 1109
       height: 500
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.26041666
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1109, y: 517}
@@ -412,7 +412,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: e2fbffff00000000
+    m_ExpandedIDs: 9cb0ffff80b1ffff88b2ffff56b3ffff24b4fffff2b4ffffc0b5ffff8eb6ffff5cb7ffff2ab8fffffeb8ffffd2b9ffffb6baffffdabaffff08bbffff0cbbffffe2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,13 +665,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Audio
   m_LastFoldersGridSize: 61
-  m_LastProjectPath: D:\OneDrive\Unity\Ten-Tiny-Levels
+  m_LastProjectPath: D:\Backup\Projekt\Ten-Tiny-Levels
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 33}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f2260000
     m_LastClickedID: 9970
-    m_ExpandedIDs: 000000004c25000086250000f02600009a270000ba27000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000004c250000ba27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
