@@ -202,7 +202,7 @@ public class BadguyController : CharacterBase {
 
         if (this.isFiring)
         {
-            this.Fire();
+            this.Fire(Vector2.zero);
         }
 
         base.FixedUpdate();

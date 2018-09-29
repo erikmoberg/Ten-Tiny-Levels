@@ -2,55 +2,49 @@
 using System.Collections;
 using System.Linq;
 
-public class LaserRifleController : MonoBehaviour, IFireable {
-	
-	private Transform muzzlePositionObject;
+public class LaserRifleController : Fireable {
 
     public Sprite ReloadingSprite;
-
-	private Renderer muzzleflashRenderer;
-	private bool canFire = true;
     private Sprite regularSprite;
-	 
-	void Start () 
-	{
-        this.muzzlePositionObject = this.transform.Find("MuzzlePosition");
+
+    public override void Start()
+    {
         var muzzleflash = this.transform.Find ("LaserMuzzleflash");
 		this.muzzleflashRenderer = muzzleflash.GetComponent<SpriteRenderer>();
         this.regularSprite = GetComponent<SpriteRenderer>().sprite;
-        this.Reset();
+        base.Start();
 	}
 	
-	public void Fire(System.Func<bool> getIsFacingRight, LayerMask layerMask) 
+	public override void Fire(System.Func<bool> getIsFacingRight, LayerMask layerMask, Vector2 targetPosition) 
 	{		
 		if (this.canFire)
 		{
-            StartCoroutine(FireLaser(getIsFacingRight, layerMask));
+            StartCoroutine(FireLaser(getIsFacingRight, layerMask, targetPosition));
             StartCoroutine(ResetCanFire());
 		}
 	}
 
-    public void Reset()
+    public override void Reset()
     {
-        muzzleflashRenderer.enabled = false;
-        this.canFire = true;
         GetComponent<SpriteRenderer>().sprite = this.regularSprite;
+        base.Reset();
     }
 
-    IEnumerator FireLaser(System.Func<bool> getIsFacingRight, LayerMask layerMask)
+    IEnumerator FireLaser(System.Func<bool> getIsFacingRight, LayerMask layerMask, Vector2 targetPositionWorld)
     {
         this.canFire = false;
 
         var isFacingRight = getIsFacingRight();
         var z = isFacingRight ? 0 : 180f;
-
+        var target1 = this.GetProjectileVectorAndRotate(targetPositionWorld, getIsFacingRight());
         SfxHelper.PlaySound(GetComponent<AudioSource>());
         StartCoroutine(ShowMuzzleflash());
-        var laserShotInstance = Instantiate(Resources.Load<GameObject>("LaserShot"), this.muzzlePositionObject.position, Quaternion.Euler(new Vector3(0, 0, z))) as GameObject;
+        var laserShotInstance = Instantiate(Resources.Load<GameObject>("LaserShot"), this.MuzzlePositionObject.position, Quaternion.Euler(new Vector3(0, 0, z))) as GameObject;
         var lineRenderer = laserShotInstance.GetComponent<LineRenderer>();
-        var stopAt = this.GetNextObstacleHorizontalPosition(isFacingRight);
-        var from = new Vector3(this.muzzlePositionObject.position.x, this.muzzlePositionObject.position.y, -1);
-        var to = new Vector3(stopAt, this.muzzlePositionObject.position.y, -1);
+        //var endTarget = targetPositionWorld;
+        var stopAt = this.GetNextObstacleHorizontalPosition(isFacingRight, target1);
+        var from = new Vector3(this.MuzzlePositionObject.position.x, this.MuzzlePositionObject.position.y, -1);
+        var to = stopAt;// new Vector3(stopAt, this.MuzzlePositionObject.position.y, -1);
         lineRenderer.SetPosition(0, from);
         lineRenderer.SetPosition(1, to);
         var controller = lineRenderer.GetComponent<LaserShotController>();
@@ -61,22 +55,25 @@ public class LaserRifleController : MonoBehaviour, IFireable {
         GetComponent<SpriteRenderer>().sprite = this.regularSprite;
     }
 
-    float GetNextObstacleHorizontalPosition(bool isFacingRight)
+    Vector2 GetNextObstacleHorizontalPosition(bool isFacingRight, Vector2 lineVector)
     {
-        var from = this.muzzlePositionObject.position;
-        var to = new Vector2(isFacingRight ? Camera.main.pixelWidth : 0, this.muzzlePositionObject.position.y);
+        var from = new Vector2(this.MuzzlePositionObject.position.x, this.MuzzlePositionObject.position.y);
+        //var to = target;//new Vector2(isFacingRight ? Camera.main.pixelWidth : 0, this.MuzzlePositionObject.position.y);
+        var to = from + (500 * lineVector);
         var overlaps = Physics2D.LinecastAll(from, to, LayerMask.GetMask(LayerNames.Level, LayerNames.Platforms));
         if (overlaps.Length == 0)
         {
-            return to.x;
+            return to;
         }
 
-        if (isFacingRight)
-        {
-            return overlaps.Min(x => x.point.x);
-        }
+        return overlaps.First().point;
 
-        return overlaps.Max(x => x.point.x);
+        //if (isFacingRight)
+        //{
+        //    return overlaps.Min(x => x.point.x);
+        //}
+
+        //return overlaps.Max(x => x.point.x);
     }
 
 	IEnumerator ShowMuzzleflash() 

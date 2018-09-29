@@ -46,6 +46,8 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
     protected bool isStunned;
 
     private int jumpOnHeadDamage = 8;
+    private float setVerticalVelocity = 0;
+    private Vector2 vector2 = new Vector2();
 
     [HideInInspector]
     public int NumberOfLives
@@ -90,6 +92,7 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
         var gunResource = Resources.Load<GameObject>(weaponName);
         var gunPosition = new Vector3(this.transform.position.x + gunResource.transform.position.x, this.transform.position.y + gunResource.transform.position.y, this.transform.position.z);
         this.weapon = Instantiate(gunResource, gunPosition, Quaternion.Euler(new Vector3(0, 0, 0))) as GameObject;
+
         weapon.GetComponent<SpriteRenderer>().sortingLayerID = this.GetComponent<SpriteRenderer>().sortingLayerID;
         weapon.transform.parent = this.gameObject.transform;
 
@@ -218,13 +221,14 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
             return;
         }
 
-        transform.GetComponentInChildren<IFireable>().Reset();
+        transform.GetComponentInChildren<Fireable>().Reset();
         this.CanRespawn = false;
         this.IsDying = false;
         this.transform.position = this.startPosition;
         this.health = this.startingHealth; 
         this.isDropping = false;
         this.gameObject.layer = this.ownLayer;
+        transform.GetComponentInChildren<Fireable>().Reset();
         if (this.isFacingRight != this.OriginalIsFacingRight)
         {
             this.Flip();
@@ -243,9 +247,21 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
         this.CanRespawn = true;
     }
 
-	public void Fire() 
+	public void Fire(Vector2 targetPositionScreen)
 	{
-        transform.GetComponentInChildren<IFireable>().Fire(() => this.isFacingRight, this.ProjectileLayerMask);
+        var targetPositionWorld = Camera.main.ScreenToWorldPoint(targetPositionScreen);
+        if (targetPositionScreen == Vector2.zero)
+        {
+            var muzzlePosition = this.weapon.transform.Find("MuzzlePosition").position;
+            targetPositionWorld = new Vector2(muzzlePosition.x + (this.isFacingRight ? 100 : -100), muzzlePosition.y);
+        }
+        
+        if((targetPositionWorld.x < this.rigidBody.position.x && this.isFacingRight) || (targetPositionWorld.x > this.rigidBody.position.x && !this.isFacingRight))
+        {
+            this.Flip();
+        }
+
+        transform.GetComponentInChildren<Fireable>().Fire(() => this.isFacingRight, this.ProjectileLayerMask, targetPositionWorld);
 	}
 
     protected bool IsGrounded (bool needsPlatform)
@@ -317,6 +333,13 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
             }
         }
 
+        if (this.setVerticalVelocity != 0)
+        {
+            this.vector2.Set(this.rigidBody.velocity.x, setVerticalVelocity);
+            this.rigidBody.velocity = this.vector2;
+            this.setVerticalVelocity = 0;
+        }
+
         animator.SetBool("Jump", !(this.rigidBody.velocity.y == 0 && this.IsGrounded(false)));
         animator.SetFloat("Speed", Mathf.Abs(this.rigidBody.velocity.x));
 
@@ -336,9 +359,8 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
                 var damageable = col.GetComponent<IDamageable>();
                 if (damageable != null)
                 {
-                    var opposite = -this.rigidBody.velocity.y;
-                    this.rigidBody.AddForce(Vector2.up * opposite * 90);
-                    damageable.AddDamage(this.jumpOnHeadDamage, false);
+                    this.setVerticalVelocity = 50;
+                    damageable.AddDamage(UnityEngine.Random.Range(this.jumpOnHeadDamage - 2, this.jumpOnHeadDamage + 2), false);
                 }
             }
         }

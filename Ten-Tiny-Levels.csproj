@@ -89,13 +89,18 @@
     <Compile Include="Assets\Scripts\Constants\SceneNames.cs" />
     <Compile Include="Assets\Scripts\Constants\TagNames.cs" />
     <Compile Include="Assets\Scripts\Contracts\IDamageable.cs" />
-    <Compile Include="Assets\Scripts\Contracts\IFireable.cs" />
     <Compile Include="Assets\Scripts\CurrentInput.cs" />
     <Compile Include="Assets\Scripts\DeathmatchEndController.cs" />
     <Compile Include="Assets\Scripts\Difficulty.cs" />
     <Compile Include="Assets\Scripts\DifficultyRepository.cs" />
     <Compile Include="Assets\Scripts\EnemyPodController.cs" />
     <Compile Include="Assets\Scripts\ExplosionController.cs" />
+    <Compile Include="Assets\Scripts\Fireables\Fireable.cs" />
+    <Compile Include="Assets\Scripts\Fireables\LaserRifleController.cs" />
+    <Compile Include="Assets\Scripts\Fireables\PlasmaGunController.cs" />
+    <Compile Include="Assets\Scripts\Fireables\RocketLauncherController.cs" />
+    <Compile Include="Assets\Scripts\Fireables\ShotgunController.cs" />
+    <Compile Include="Assets\Scripts\Fireables\SmgController.cs" />
     <Compile Include="Assets\Scripts\FireworksController.cs" />
     <Compile Include="Assets\Scripts\GameMode.cs" />
     <Compile Include="Assets\Scripts\GameMusicController.cs" />
@@ -106,7 +111,6 @@
     <Compile Include="Assets\Scripts\IdleMonitorController.cs" />
     <Compile Include="Assets\Scripts\IdlePlayerData.cs" />
     <Compile Include="Assets\Scripts\IdlePlayerHunterController.cs" />
-    <Compile Include="Assets\Scripts\LaserRifleController.cs" />
     <Compile Include="Assets\Scripts\LaserShotController.cs" />
     <Compile Include="Assets\Scripts\Level.cs" />
     <Compile Include="Assets\Scripts\LevelIntroController.cs" />
@@ -117,7 +121,6 @@
     <Compile Include="Assets\Scripts\MuzzleflashController.cs" />
     <Compile Include="Assets\Scripts\PauseButtonController.cs" />
     <Compile Include="Assets\Scripts\PickupController.cs" />
-    <Compile Include="Assets\Scripts\PlasmaGunController.cs" />
     <Compile Include="Assets\Scripts\PlasmaShotController.cs" />
     <Compile Include="Assets\Scripts\PlayerCharacterSettings.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -128,11 +131,8 @@
     <Compile Include="Assets\Scripts\PointingDeviceManager.cs" />
     <Compile Include="Assets\Scripts\RicochetController.cs" />
     <Compile Include="Assets\Scripts\RocketController.cs" />
-    <Compile Include="Assets\Scripts\RocketLauncherController.cs" />
     <Compile Include="Assets\Scripts\SettingsRepository.cs" />
     <Compile Include="Assets\Scripts\SfxHelper.cs" />
-    <Compile Include="Assets\Scripts\ShotgunController.cs" />
-    <Compile Include="Assets\Scripts\SmgController.cs" />
     <Compile Include="Assets\Scripts\SpawnLocation.cs" />
     <Compile Include="Assets\Scripts\SpawnLocationType.cs" />
     <Compile Include="Assets\Scripts\SpriteSwapDemo.cs" />

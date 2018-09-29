@@ -94,11 +94,11 @@ public class MenuController : MonoBehaviour {
 
         if (!string.IsNullOrEmpty(this.difficultySelection.currentOption))
         {
-            GameState.Difficulty = (Difficulty)System.Enum.Parse(typeof(Difficulty), this.difficultySelection.currentOption);
+            GameState.Difficulty = (int)System.Enum.Parse(typeof(Difficulty), this.difficultySelection.currentOption);
         }
         else
         {
-            GameState.Difficulty = Difficulty.Easy;
+            GameState.Difficulty = 0;
         }
 
         PlayerSettingsRepository.PlayerOneSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
@@ -118,11 +118,11 @@ public class MenuController : MonoBehaviour {
 
         if (!string.IsNullOrEmpty(this.coopdifficultySelection.currentOption))
         {
-            GameState.Difficulty = (Difficulty)System.Enum.Parse(typeof(Difficulty), this.coopdifficultySelection.currentOption);
+            GameState.Difficulty = (int)System.Enum.Parse(typeof(Difficulty), this.coopdifficultySelection.currentOption);
         }
         else
         {
-            GameState.Difficulty = Difficulty.Easy;
+            GameState.Difficulty = 0;
         }
 
         PlayerSettingsRepository.PlayerOneSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();

@@ -71,7 +71,7 @@ public class VictoryController : MonoBehaviour
 
         PlayerSettingsRepository.PlayerOneSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
         PlayerSettingsRepository.PlayerTwoSettings.LivesLeft = DifficultyRepository.GetNumberOfLives();
-        GameState.Difficulty = (Difficulty)((int)GameState.Difficulty + 1);
+        GameState.Difficulty = GameState.Difficulty + 1;
         GameState.CurrentLevel = 0;
         SceneManager.LoadScene(LevelRepository.AllLevels[GameState.CurrentLevel].SceneName);
     }

@@ -106,12 +106,12 @@ public class PlayerController : CharacterBase {
 	{
         if (this.PlayerSettings.PointingDeviceData.swipeDirection.Tap)
         {
-            this.Fire();
+            this.Fire(this.PlayerSettings.PointingDeviceData.secondPressPosition);
         }
 
         if (Input.GetKeyDown(this.PlayerSettings.FireKey)) 
 		{
-            this.Fire();
+            this.Fire(Vector2.zero);
 		}
 	}
 
@@ -119,6 +119,10 @@ public class PlayerController : CharacterBase {
 	{
         var moveHorizontal = (float)(Input.GetKey(this.PlayerSettings.LeftKey) ? -1 : Input.GetKey(this.PlayerSettings.RightKey) ? 1 : 0);
         var moveVertical = Input.GetKey(this.PlayerSettings.DropKey) ? -1 : Input.GetKey(this.PlayerSettings.JumpKey) ? 1 : 0;
+        if(moveHorizontal != 0 || moveVertical != 0)
+        {
+            this.PlayerSettings.PointingDeviceData.swipeVelocity = 10000;
+        }
 
         if (Input.GetKey(KeyCode.K))
         {

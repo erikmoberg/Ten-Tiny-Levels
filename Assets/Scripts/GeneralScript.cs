@@ -106,12 +106,14 @@ public class GeneralScript : MonoBehaviour {
             if (GameState.CurrentLevel < LevelRepository.AllLevels.Length - 1)
             {
                 GameState.CurrentLevel++;
-                SceneManager.LoadScene(LevelRepository.AllLevels[GameState.CurrentLevel].SceneName);
             }
             else
             {
-                SceneManager.LoadScene(SceneNames.Victory);
+                GameState.CurrentLevel = 0;
+                GameState.Difficulty += 1;
             }
+
+            SceneManager.LoadScene(LevelRepository.AllLevels[GameState.CurrentLevel].SceneName);
         }
     }
 

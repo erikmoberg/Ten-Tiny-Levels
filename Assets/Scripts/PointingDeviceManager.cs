@@ -21,18 +21,18 @@ public class PointingDeviceManager : MonoBehaviour
 
     public void DetectSwipe ()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    this.HandleStartPress(Input.mousePosition, Int32.MaxValue);
-        //}
-        //else if (Input.GetMouseButtonUp(0))
-        //{
-        //    var data = Player1Data.fingerId != null ? Player1Data : Player2Data.fingerId != null ? Player2Data : null;
-        //    if (data != null)
-        //    {
-        //        this.HandleEndPress(Input.mousePosition, data);
-        //    }
-        //}
+        if (Input.GetMouseButtonDown(0))
+        {
+            this.HandleStartPress(Input.mousePosition, Int32.MaxValue);
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            var data = Player1Data.fingerId != null ? Player1Data : Player2Data.fingerId != null ? Player2Data : null;
+            if (data != null)
+            {
+                this.HandleEndPress(Input.mousePosition, data);
+            }
+        }
 
         if (Player1Data.IsPressing)
         {

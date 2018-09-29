@@ -1,22 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RocketLauncherController : MonoBehaviour, IFireable {
+public class RocketLauncherController : Fireable {
 
     private float rocketSpeed = 25f;
-    private Transform muzzlePositionObject;
-    private Renderer muzzleflashRenderer;
-    private bool canFire = true;
 
-    public void Start () 
+    public override void Start()
     {
-        this.muzzlePositionObject = this.transform.Find("MuzzlePosition");
+        this.MuzzlePositionObject = this.transform.Find("MuzzlePosition");
         var muzzleflash = this.transform.Find ("PlasmaMuzzleflash");
         this.muzzleflashRenderer = muzzleflash.GetComponent<SpriteRenderer>();
-        this.Reset();
+        base.Start();
     }
 
-    public void Fire(System.Func<bool> getIsFacingRight, LayerMask layerMask) 
+    public override void Fire(System.Func<bool> getIsFacingRight, LayerMask layerMask, Vector2 targetPositionWorld) 
     {       
         if (this.canFire)
         {
@@ -24,21 +21,17 @@ public class RocketLauncherController : MonoBehaviour, IFireable {
             this.canFire = false;
 
             var isFacingRight = getIsFacingRight();
-            var z = isFacingRight ? 0 : 180f;
+            //var z = isFacingRight ? 0 : 180f;
             var multiplyBy = isFacingRight ? 1 : -1;
-            var rocketInstance = Instantiate(Resources.Load<GameObject>(ResourceNames.Rocket), this.muzzlePositionObject.position, Quaternion.Euler(new Vector3(0, 0, z))) as GameObject;
-            rocketInstance.GetComponent<Rigidbody2D>().velocity = new Vector2((this.rocketSpeed) * multiplyBy, 0);
+            var target = this.GetProjectileVectorAndRotate(targetPositionWorld, getIsFacingRight());
+            var z = GetAngle(target, a => a);
+            var rocketInstance = Instantiate(Resources.Load<GameObject>(ResourceNames.Rocket), this.MuzzlePositionObject.position, Quaternion.Euler(new Vector3(0, 0, z))) as GameObject;
+            rocketInstance.GetComponent<Rigidbody2D>().velocity = new Vector2(target.x * this.rocketSpeed, target.y * this.rocketSpeed);
             rocketInstance.layer = layerMask;
 
             StartCoroutine(ResetCanFire());
             StartCoroutine(ShowMuzzleflash());
         }
-    }
-
-    public void Reset()
-    {
-        muzzleflashRenderer.enabled = false;
-        this.canFire = true;
     }
 
     IEnumerator ShowMuzzleflash() 
