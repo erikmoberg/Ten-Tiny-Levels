@@ -47,6 +47,7 @@ public class LaserRifleController : Fireable {
         var to = stopAt;// new Vector3(stopAt, this.MuzzlePositionObject.position.y, -1);
         lineRenderer.SetPosition(0, from);
         lineRenderer.SetPosition(1, to);
+        lineRenderer.sortingLayerName = LayerNames.Foreground;
         var controller = lineRenderer.GetComponent<LaserShotController>();
         controller.FromPosition = from;
         controller.ToPosition = to;
@@ -67,13 +68,6 @@ public class LaserRifleController : Fireable {
         }
 
         return overlaps.First().point;
-
-        //if (isFacingRight)
-        //{
-        //    return overlaps.Min(x => x.point.x);
-        //}
-
-        //return overlaps.Max(x => x.point.x);
     }
 
 	IEnumerator ShowMuzzleflash() 

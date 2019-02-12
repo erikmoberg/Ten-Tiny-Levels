@@ -72,6 +72,7 @@ public class EnemyPodController : MonoBehaviour
             badguy.IsAggressive = true;
             badguy.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 45), ForceMode2D.Impulse);
             this.isAlive = false;
+            SfxHelper.PlayFromResourceAtCamera(ResourceNames.EnemyRespawnAudioClip);
             Destroy(this.gameObject);
         }
     }

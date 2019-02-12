@@ -4,11 +4,15 @@ using System.Collections;
 public class PlasmaGunController : Fireable {
 
     private float bulletSpeed = 100f;
+    public Sprite ReloadingSprite;
+    private Sprite regularSprite;
+    private float reloadTime = 0.1f;
 
     public override void Start()
     {
         var muzzleflash = this.transform.Find ("PlasmaMuzzleflash");
         this.muzzleflashRenderer = muzzleflash.GetComponent<SpriteRenderer>();
+        this.regularSprite = GetComponent<SpriteRenderer>().sprite;
         base.Start();
 	}
 	
@@ -30,6 +34,7 @@ public class PlasmaGunController : Fireable {
 
             StartCoroutine(ResetCanFire());
             StartCoroutine(ShowMuzzleflash());
+            StartCoroutine(ShowReloadAnimation());
         }
     }
 
@@ -42,7 +47,14 @@ public class PlasmaGunController : Fireable {
 
     IEnumerator ResetCanFire() 
     {
-        yield return new WaitForSeconds (0.1f);
+        yield return new WaitForSeconds (this.reloadTime);
         this.canFire = true;
+    }
+
+    IEnumerator ShowReloadAnimation()
+    {
+        GetComponent<SpriteRenderer>().sprite = this.ReloadingSprite;
+        yield return new WaitForSeconds(this.reloadTime);
+        GetComponent<SpriteRenderer>().sprite = this.regularSprite;
     }
 }

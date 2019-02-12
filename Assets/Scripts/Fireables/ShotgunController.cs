@@ -2,13 +2,17 @@
 using System.Collections;
 
 public class ShotgunController : Fireable {
-	
-	private float bulletSpeed = 200f;
+
+    public Sprite ReloadingSprite;
+    private Sprite regularSprite;
+    private float bulletSpeed = 200f;
+    private float reloadTime = 0.5f;
 
     public override void Start()
     {
         var muzzleflash = this.transform.Find ("ShotgunMuzzleflash");
 		this.muzzleflashRenderer = muzzleflash.GetComponent<SpriteRenderer>();
+        this.regularSprite = GetComponent<SpriteRenderer>().sprite;
         base.Start();
 	}
 	 
@@ -35,7 +39,8 @@ public class ShotgunController : Fireable {
 
             StartCoroutine(ResetCanFire());
             StartCoroutine(ShowMuzzleflash());
-		}
+            StartCoroutine(ShowReloadAnimation());
+        }
 	}
 
 	IEnumerator ShowMuzzleflash() 
@@ -47,7 +52,15 @@ public class ShotgunController : Fireable {
 
 	IEnumerator ResetCanFire() 
 	{
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (this.reloadTime);
 		this.canFire = true;
 	}
+
+    IEnumerator ShowReloadAnimation()
+    {
+        yield return new WaitForSeconds(this.reloadTime / 2);
+        GetComponent<SpriteRenderer>().sprite = this.ReloadingSprite;
+        yield return new WaitForSeconds(this.reloadTime / 2);
+        GetComponent<SpriteRenderer>().sprite = this.regularSprite;
+    }
 }

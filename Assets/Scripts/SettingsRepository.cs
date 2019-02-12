@@ -43,5 +43,15 @@ public static class SettingsRepository
         }
     }
 
+    public static int GetHighScore(GameMode gameMode)
+    {
+        return PlayerPrefs.GetInt("HighScore" + gameMode);
+    }
+
+    public static void SetHighScore(GameMode gameMode, int score)
+    {
+        PlayerPrefs.SetInt("HighScore" + gameMode, score);
+    }
+
     public static event EventHandler MusicEnabledChanged;
 }

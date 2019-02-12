@@ -14,9 +14,14 @@ public abstract class Fireable : MonoBehaviour
 
     public virtual void Reset()
     {
-        muzzleflashRenderer.enabled = false;
+        if (muzzleflashRenderer != null)
+        {
+            muzzleflashRenderer.enabled = false;
+        }
+        
         this.canFire = true;
         this.transform.rotation = Quaternion.identity;
+        this.rotations = 0;
     }
 
     public Transform MuzzlePositionObject { get; set; }
@@ -43,9 +48,13 @@ public abstract class Fireable : MonoBehaviour
 
     private Vector2 Extrapolate(Vector2 targetPositionWorld)
     {
-        var muzzle = new Vector2(this.MuzzlePositionObject.position.x, this.MuzzlePositionObject.position.y);
-        var vector = targetPositionWorld - muzzle;
-        return muzzle + (100 * vector);
+        //var muzzle = new Vector2(this.MuzzlePositionObject.position.x, this.MuzzlePositionObject.position.y);
+        //var vector = targetPositionWorld - muzzle;
+        //return muzzle + (100 * vector);
+
+        var center = new Vector2(this.transform.position.x, this.transform.position.y);
+        var vector = targetPositionWorld - center;
+        return center + (100 * vector);
     }
 
     protected Vector2 GetProjectileVector(Vector2 targetPositionWorld, bool isFacingRight, int rotateBy)
@@ -69,6 +78,7 @@ public abstract class Fireable : MonoBehaviour
         this.rotations++;
         var angleDegrees = GetAngle(target, a => a);
         this.transform.rotation = Quaternion.AngleAxis(angleDegrees, Vector3.forward);
+        //this.transform.Rotate(Vector3.forward, angleDegrees);
         StartCoroutine(ResetRotation());
     }
 

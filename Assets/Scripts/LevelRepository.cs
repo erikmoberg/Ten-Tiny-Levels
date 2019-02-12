@@ -48,4 +48,9 @@ public class LevelRepository
             
         return randomizedLevels[++currentRandomLevel % AllLevels.Length]; 
     }
+
+    public static Level Next()
+    {
+        return AllLevels[++currentRandomLevel % AllLevels.Length];
+    }
 }

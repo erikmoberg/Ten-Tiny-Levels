@@ -34,6 +34,8 @@ public class ResourceNames
 
     public static string PlayerPod = "Player pod";
 
+    public static string Player2Pod = "Player2 pod";
+
     public static string Rocket = "Rocket";
 
     public static string RocketReloadAudioClip = "rocket-reload";
@@ -55,4 +57,10 @@ public class ResourceNames
     public static string WalkAudioClip = "move";
 
     public static string ClickAudioClip = "click";
+
+    public static string RespawnAudioClip = "respawn";
+
+    public static string EnemyRespawnAudioClip = "respawn-enemy";
+
+    public static string GrenadeShell = "Grenade Shell";
 }

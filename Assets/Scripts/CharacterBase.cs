@@ -138,12 +138,12 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
             var critical = false;
             if (critical)
             {
+                // TODO: Critical
                 damage *= 2;
-                textComponent1.color = new Color(255, 0, 0);
             }
             else
             {
-                textComponent1.color = new Color(128, 255, 0);
+                textComponent1.color = this.GetDamageTextColor();
             }
 
             textComponent1.text = damage.ToString();
@@ -179,6 +179,11 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
             SfxHelper.PlayFromResourceAtCamera(this.HitAudioClipName);
         }
 	}
+
+    protected virtual Color GetDamageTextColor()
+    {
+        return new Color(128, 255, 0);
+    }
 
     public void EmitDeathParticles()
     {
@@ -220,8 +225,7 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
         {
             return;
         }
-
-        transform.GetComponentInChildren<Fireable>().Reset();
+        
         this.CanRespawn = false;
         this.IsDying = false;
         this.transform.position = this.startPosition;
@@ -302,7 +306,7 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
 
             if (this.ShouldPlayMovementSounds)
             {
-                SfxHelper.PlayFromResourceAtCamera(ResourceNames.WalkAudioClip);
+                SfxHelper.PlayFromResourceAtCamera(ResourceNames.JumpAudioClip);
             }
         }
     }
@@ -317,7 +321,7 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
 
             if (this.ShouldPlayMovementSounds)
             {
-                SfxHelper.PlayFromResourceAtCamera(ResourceNames.WalkAudioClip);
+                SfxHelper.PlayFromResourceAtCamera(ResourceNames.DropAudioClip);
             }
         }
     }
@@ -340,8 +344,11 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
             this.setVerticalVelocity = 0;
         }
 
-        animator.SetBool("Jump", !(this.rigidBody.velocity.y == 0 && this.IsGrounded(false)));
-        animator.SetFloat("Speed", Mathf.Abs(this.rigidBody.velocity.x));
+        if (this.isActiveAndEnabled)
+        {
+            animator.SetBool("Jump", !(this.rigidBody.velocity.y == 0 && this.IsGrounded(false)));
+            animator.SetFloat("Speed", Mathf.Abs(this.rigidBody.velocity.x));
+        }
 
         UpdateHealthBar();
     }

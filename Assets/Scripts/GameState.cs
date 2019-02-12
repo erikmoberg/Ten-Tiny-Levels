@@ -2,7 +2,7 @@
 
     public static string[] AvailableWeapons = new string[0];
 
-    public static GameMode GameMode;
+    public static GameMode GameMode = GameMode.TwoPlayerCoop;
 
     public static int Difficulty = 0;
 

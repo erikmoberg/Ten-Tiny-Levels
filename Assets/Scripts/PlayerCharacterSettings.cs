@@ -17,5 +17,6 @@ public class PlayerCharacterSettings
     public int LivesLeft { get; set; }
     public string LivesLeftIconResource { get; set; }
     public PointingDeviceData PointingDeviceData { get; set; }
+    public string PlayerPodName { get; set; }
 }
 

@@ -7,7 +7,7 @@ public static class PlayerSettingsRepository
         {
             ProjectileLayer = LayerNames.Player1Projectiles,
             Layer = LayerMask.NameToLayer(LayerNames.Player),
-            SelectedWeapon = "Laser Rifle",
+            SelectedWeapon = "Smg",
             JumpKey = "up",
             DropKey = "down",
             LeftKey = "left",
@@ -16,8 +16,9 @@ public static class PlayerSettingsRepository
             LivesLeft = 3,
             SpriteSheet = "player",
             LivesLeftIconResource = "Life",
-            PointingDeviceData = PointingDeviceManager.Player1Data
-        };
+            PointingDeviceData = PointingDeviceManager.Player1Data,
+            PlayerPodName = ResourceNames.PlayerPod
+    };
 
     public static PlayerCharacterSettings PlayerTwoSettings = new PlayerCharacterSettings 
         {
@@ -32,7 +33,8 @@ public static class PlayerSettingsRepository
             LivesLeft = 3,
             SpriteSheet = "player2",
             LivesLeftIconResource = "Life Player 2",
-            PointingDeviceData = PointingDeviceManager.Player2Data
-        };
+            PointingDeviceData = PointingDeviceManager.Player2Data,
+            PlayerPodName = ResourceNames.Player2Pod
+    };
 }
 

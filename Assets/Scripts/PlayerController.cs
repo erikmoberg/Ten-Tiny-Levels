@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : CharacterBase {
@@ -63,6 +60,11 @@ public class PlayerController : CharacterBase {
         }
     }
 
+    protected override Color GetDamageTextColor()
+    {
+        return new Color(255, 0, 0);
+    }
+
     public new void Start() 
 	{
         this.gameObject.layer = this.PlayerSettings.Layer;
@@ -88,11 +90,16 @@ public class PlayerController : CharacterBase {
             this.PlayerSettings.LivesLeft = this.NumberOfLives;
             if (GameRules.ShouldPlayerCreatePodOnDeath(this)) 
             {
-                var pod = Instantiate(Resources.Load<GameObject>(ResourceNames.PlayerPod), this.transform.position, Quaternion.Euler(new Vector3())) as GameObject;
+                var pod = Instantiate(Resources.Load<GameObject>(this.PlayerSettings.PlayerPodName), this.transform.position, Quaternion.Euler(new Vector3())) as GameObject;
                 var podController = pod.GetComponent<PlayerPodController>();
                 podController.SpawnLocation = this.startPosition;
                 podController.Character = this;
             }
+        };
+
+        this.OnRespawn += (sender, e) => 
+        {
+            SfxHelper.PlayFromResourceAtCamera(ResourceNames.RespawnAudioClip);
         };
 
         this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon, false);
@@ -102,7 +109,12 @@ public class PlayerController : CharacterBase {
         base.Start();
 	}
 
-	void Update()
+    private void PlayerController_OnRespawn(object sender, System.EventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    void Update()
 	{
         if (this.PlayerSettings.PointingDeviceData.swipeDirection.Tap)
         {
@@ -127,7 +139,7 @@ public class PlayerController : CharacterBase {
         if (Input.GetKey(KeyCode.K))
         {
             var toDestroy = GameObject.FindGameObjectsWithTag(TagNames.Badguy);
-            foreach(var t in toDestroy)
+            foreach (var t in toDestroy)
             {
                 var badguy = t.GetComponent<BadguyController>();
                 if (badguy != null)
@@ -145,7 +157,7 @@ public class PlayerController : CharacterBase {
 
         if (Input.GetKey(KeyCode.L))
         {
-            var weapons = new[] { "Smg", "Shotgun", "Plasma Gun", "Laser Rifle", "Rocket Launcher" };
+            var weapons = new[] { "Smg", "Shotgun", "Plasma Gun", "Laser Rifle", "Rocket Launcher", "Grenade Launcher" };
             var index = System.Array.IndexOf(weapons, this.PlayerSettings.SelectedWeapon);
             index = (index + 1) % weapons.Length;
             GameObject.Destroy(this.weapon);
@@ -155,7 +167,12 @@ public class PlayerController : CharacterBase {
 
         if (Input.GetKey(KeyCode.J))
         {
-            SceneManager.LoadScene(LevelRepository.NextRandomized().SceneName);
+            SceneManager.LoadScene(LevelRepository.Next().SceneName);
+        }
+
+        if (Input.GetKey(KeyCode.O))
+        {
+            this.AddDamage(this.health, false);
         }
 
         if (this.PlayerSettings.PointingDeviceData.hasAction)

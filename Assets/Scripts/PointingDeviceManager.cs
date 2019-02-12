@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.UI;
+using System.Linq;
 
 public class PointingDeviceManager : MonoBehaviour
 {
@@ -21,35 +23,38 @@ public class PointingDeviceManager : MonoBehaviour
 
     public void DetectSwipe ()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (SystemInfo.deviceType == DeviceType.Desktop)
         {
-            this.HandleStartPress(Input.mousePosition, Int32.MaxValue);
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            var data = Player1Data.fingerId != null ? Player1Data : Player2Data.fingerId != null ? Player2Data : null;
-            if (data != null)
+            // Handle mouse input if on PC
+            if (Input.GetMouseButtonDown(0))
             {
-                this.HandleEndPress(Input.mousePosition, data);
+                this.HandleStartPress(Input.mousePosition, Int32.MaxValue);
             }
-        }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                var data = Player1Data.fingerId != null ? Player1Data : Player2Data.fingerId != null ? Player2Data : null;
+                if (data != null)
+                {
+                    this.HandleEndPress(Input.mousePosition, data);
+                }
+            }
 
-        if (Player1Data.IsPressing)
-        {
-            this.HandleMove(Input.mousePosition, Player1Data);
-        }
+            if (Player1Data.IsPressing)
+            {
+                this.HandleMove(Input.mousePosition, Player1Data);
+            }
 
-        if (Player2Data.IsPressing)
-        {
-            this.HandleMove(Input.mousePosition, Player2Data);
+            if (Player2Data.IsPressing)
+            {
+                this.HandleMove(Input.mousePosition, Player2Data);
+            }
         }
 
         if (Input.touches.Length > 0)
         {
             for (var i = 0; i < Input.touchCount; i++)
             {
-                var t = Input.GetTouch(i); 
-
+                var t = Input.GetTouch(i);
                 if (t.phase == TouchPhase.Began)
                 {
                     if (Player1Data.fingerId == null || Player2Data.fingerId == null)
