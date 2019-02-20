@@ -11,9 +11,16 @@ public class GeneralScript : MonoBehaviour {
     [HideInInspector]
     public static PlayerController Player2;
 
+    private bool isGameOver = false;
+
     public bool HasInitialized { get; set; }
 
-	void Update () 
+    void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
+
+    void Update () 
     {
         if (Player1 == null)
         {
@@ -53,7 +60,7 @@ public class GeneralScript : MonoBehaviour {
 
         if (GameState.GameMode == GameMode.SinglePlayer)
         {
-            if (Player1.NumberOfLives == 0)
+            if (Player1.NumberOfLives <= 0)
             {
                 StartCoroutine(GoToGameOver());
             }
@@ -66,12 +73,12 @@ public class GeneralScript : MonoBehaviour {
         {
             if (Player1.NumberOfLives == 0 || Player2.NumberOfLives == 0)
             {
-                StartCoroutine(GoToDeatchmatchEnd());
+                StartCoroutine(GoToDeathmatchEnd());
             }
         }
         else if (GameState.GameMode == GameMode.TwoPlayerCoop)
         {
-            if (Player1.NumberOfLives == 0 && Player2.NumberOfLives == 0)
+            if (Player1.NumberOfLives <= 0 && Player2.NumberOfLives <= 0)
             {
                 StartCoroutine(GoToGameOver());
             }
@@ -92,6 +99,12 @@ public class GeneralScript : MonoBehaviour {
         if (GameState.GameMode == GameMode.TwoPlayerDeathmatch && Player1.NumberOfLives > 0 && Player2.NumberOfLives > 0)
         {
             yield return new WaitForSeconds(2f);
+            
+            // Randomize new weapons
+            PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon =
+                PlayerSettingsRepository.PlayerTwoSettings.SelectedWeapon =
+                Fireable.AllWeaponResourceNames[UnityEngine.Random.Range(0, Fireable.AllWeaponResourceNames.Length - 1)];
+
             SceneManager.LoadScene(LevelRepository.NextRandomized().SceneName);
         }
     }
@@ -99,9 +112,9 @@ public class GeneralScript : MonoBehaviour {
     IEnumerator GoToNextLevel() 
     {
         var currentLevel = GameState.CurrentLevel;
-        yield return new WaitForSeconds (0.2f);
-        // in case triggered twice (...how?), do not advance twice
-        if (currentLevel == GameState.CurrentLevel)
+        yield return new WaitForSeconds (3f);
+        // in case triggered twice, do not advance twice
+        if (currentLevel == GameState.CurrentLevel && !this.isGameOver)
         {
             if (GameState.CurrentLevel < LevelRepository.AllLevels.Length - 1)
             {
@@ -119,19 +132,20 @@ public class GeneralScript : MonoBehaviour {
 
     IEnumerator GoToMenu() 
     {
-        yield return new WaitForSeconds (1f);
+        yield return new WaitForSeconds (3f);
         SceneManager.LoadScene(SceneNames.Menu);
     }
 
     IEnumerator GoToGameOver()
     {
-        yield return new WaitForSeconds(1f);
+        this.isGameOver = true;
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneNames.GameOver);
     }
 
-    IEnumerator GoToDeatchmatchEnd()
+    IEnumerator GoToDeathmatchEnd()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneNames.DeathmatchEnd);
     }
 }

@@ -63,4 +63,8 @@ public class ResourceNames
     public static string EnemyRespawnAudioClip = "respawn-enemy";
 
     public static string GrenadeShell = "Grenade Shell";
+
+    public static string FinishedLevelAudioClip = "finished level";
+
+    public static string TimerTickAudioClip = "tick";
 }

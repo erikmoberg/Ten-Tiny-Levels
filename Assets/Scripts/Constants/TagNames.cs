@@ -12,4 +12,6 @@ public class TagNames : MonoBehaviour {
     public const string TopTeleport = "TopTeleport";
 
     public const string PauseMenu = "PauseMenu";
+
+    public const string Removing = "Removing";
 }

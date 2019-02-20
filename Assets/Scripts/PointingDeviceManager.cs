@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System;
-using UnityEngine.UI;
-using System.Linq;
 
 public class PointingDeviceManager : MonoBehaviour
 {

@@ -52,25 +52,11 @@ public class PlayerPodController : MonoBehaviour {
     {
         this.playerHasRespawned = true;
         this.Character.OnRespawn -= HandlePlayerRespawn;
-        StartCoroutine(RemoveSelf());
+        RemoveSelf();
     }
 
-    private IEnumerator RemoveSelf()
+    private void RemoveSelf()
     {
-        this.spriteRenderer.enabled = false;
-
-        var mainSystem = this.particles.main;
-        var emission = this.particles.emission;
-        
-        //mainSystem.startSpeed = 100;
-        //mainSystem.startLifetime = new ParticleSystem.MinMaxCurve(0.5f);
-
-        //yield return new WaitForSeconds(0.05f);
-
-        mainSystem.loop = false;
-
-        yield return new WaitForSeconds(3f);
-
         Destroy(this.gameObject);
     }
 }

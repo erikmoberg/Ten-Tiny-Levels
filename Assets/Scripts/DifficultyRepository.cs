@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public static class DifficultyRepository {
-
+public static class DifficultyRepository
+{
     public static int GetHealth(string tag)
     {
         if (tag == TagNames.Badguy)
         {
-            return 5 + ((int)GameState.Difficulty) * 10;
+            return 5 + (Factor * 2);
         }
         else if (tag == TagNames.Player)
         {
@@ -16,7 +15,7 @@ public static class DifficultyRepository {
                 return 20;
             }
 
-            return Mathf.Max(10, 50 - ((int)GameState.Difficulty) * 10);
+            return Mathf.Max(10, 50 - (Factor));
         }
         else
         {
@@ -27,7 +26,7 @@ public static class DifficultyRepository {
 
     public static float GetTimeUntilFlipSeconds()
     {
-        return 1f / (1 + (int)GameState.Difficulty);
+        return 1f / (1 + Factor);
     }
 
     public static float GetTimeUntilFireSeconds()
@@ -37,17 +36,17 @@ public static class DifficultyRepository {
 
     public static float GetTimeUntilMoveActionSeconds()
     {
-        return 1 + 3f / (1 + (int)GameState.Difficulty);
+        return 1 + 3f / (1 + Factor);
     }
 
     public static float GetRunSpeed()
     {
-        return 25 + (int)GameState.Difficulty * 3;
+        return 25 + ((float)Factor/10) * 3;
     }
 
     public static float GetAggressiveRunSpeed()
     {
-        return 35 + (int)GameState.Difficulty * 5;
+        return 35 + ((float)Factor / 10) * 5;
     }
 
     public static int GetNumberOfLives()
@@ -62,14 +61,22 @@ public static class DifficultyRepository {
 
     public static float GetPodTimeToLiveSeconds()
     {
-        return Mathf.Max(5, 10 - (int)GameState.Difficulty);
+        return Mathf.Max(5, 10 - (Factor / 10));
     }
 
     public static float GetIdleTimeSeconds
     {
         get
         {
-            return Mathf.Max(1, 5 - (int)GameState.Difficulty);
+            return Mathf.Max(1, 5 - (Factor / 10));
+        }
+    }
+
+    private static int Factor
+    {
+        get
+        {
+            return GameState.Difficulty * 10 + GameState.CurrentLevel;
         }
     }
 }

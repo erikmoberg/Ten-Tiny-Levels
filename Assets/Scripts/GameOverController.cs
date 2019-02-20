@@ -5,20 +5,29 @@ using UnityEngine.SceneManagement;
 public class GameOverController : MonoBehaviour
 {
     private bool canProceed = false;
-    public UnityEngine.UI.Text scoreText;
-    public UnityEngine.UI.Text highscoreText;
+    public UnityEngine.UI.Text ownScoreText;
+    public UnityEngine.UI.Text highscoreHeadingText;
+    public UnityEngine.UI.Text currentHighscoreText;
+
     private int count = 0;
 
     void Start()
     {
-        this.scoreText.text = "SCORE: " + GameState.Score;
+        this.ownScoreText.text = "SCORE: " + GameState.Score;
 
         var highScore = SettingsRepository.GetHighScore(GameState.GameMode);
         if (GameState.Score > highScore)
         {
-            this.highscoreText.enabled = true;
+            this.highscoreHeadingText.text = "NEW HIGHSCORE!";
+            this.currentHighscoreText.enabled = false;
             SettingsRepository.SetHighScore(GameState.GameMode, GameState.Score);
             StartCoroutine(FireFireworks());
+        }
+        else
+        {
+            this.highscoreHeadingText.text = "HIGHSCORE:";
+            this.currentHighscoreText.text = highScore.ToString();
+            this.currentHighscoreText.enabled = true;
         }
 
         StartCoroutine(SetProceed());

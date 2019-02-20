@@ -3,6 +3,8 @@ using System.Collections;
 
 public class LaserShotController : MonoBehaviour {
 
+    public SpriteRenderer ricochet;
+
     private float alpha = 1;
 
     private float baseDamage = 15f;
@@ -42,6 +44,7 @@ public class LaserShotController : MonoBehaviour {
             var damageable = overlap.collider.gameObject.GetComponent<IDamageable>();
             if (damageable != null)
             {
+                Instantiate(this.ricochet, overlap.point, Quaternion.Euler(new Vector3(0, 0)));
                 damageable.AddDamage((int)Random.Range(this.baseDamage * 0.8f, this.baseDamage * 1.2f), this.FromPosition.x > this.ToPosition.x);
             }
         }

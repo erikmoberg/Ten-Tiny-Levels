@@ -7,6 +7,8 @@ public abstract class Fireable : MonoBehaviour
     private int rotations = 0;
 
     public abstract void Fire(System.Func<bool> getIsFacingRight, LayerMask layerMask, Vector2 targetPosition);
+    
+    public static string[] AllWeaponResourceNames = new[] { "Smg", "Shotgun", "Plasma Gun", "Laser Rifle", "Rocket Launcher", "Grenade Launcher" };
 
     protected Renderer muzzleflashRenderer;
 
@@ -36,9 +38,6 @@ public abstract class Fireable : MonoBehaviour
 
     protected Vector2 GetProjectileVectorAndRotate(Vector2 targetPositionWorld, bool isFacingRight)
     {
-        //Debug.Log("Muzzle: " + this.MuzzlePositionObject.position.x + ";" + this.MuzzlePositionObject.position.y);
-        //Debug.Log("Target: " + targetPositionWorld.x + ";" + targetPositionWorld.y);
-
         var extrapolatedTargetPosition = this.Extrapolate(targetPositionWorld);
 
         this.Rotate(extrapolatedTargetPosition, isFacingRight);
@@ -48,10 +47,6 @@ public abstract class Fireable : MonoBehaviour
 
     private Vector2 Extrapolate(Vector2 targetPositionWorld)
     {
-        //var muzzle = new Vector2(this.MuzzlePositionObject.position.x, this.MuzzlePositionObject.position.y);
-        //var vector = targetPositionWorld - muzzle;
-        //return muzzle + (100 * vector);
-
         var center = new Vector2(this.transform.position.x, this.transform.position.y);
         var vector = targetPositionWorld - center;
         return center + (100 * vector);
@@ -78,7 +73,6 @@ public abstract class Fireable : MonoBehaviour
         this.rotations++;
         var angleDegrees = GetAngle(target, a => a);
         this.transform.rotation = Quaternion.AngleAxis(angleDegrees, Vector3.forward);
-        //this.transform.Rotate(Vector3.forward, angleDegrees);
         StartCoroutine(ResetRotation());
     }
 

@@ -12,6 +12,7 @@ public class MenuController : MonoBehaviour {
     public GameObject SinglePlayerMenu;
     public GameObject CoopMenu;
     public GameObject DeathmatchMenu;
+    public GameObject InstructionsMenu;
 
     public UIScrollRectSnap weaponSelection;
     public UIScrollRectSnap difficultySelection;
@@ -144,6 +145,13 @@ public class MenuController : MonoBehaviour {
         SceneManager.LoadScene(LevelRepository.NextRandomized().SceneName);
     }
 
+    public void OpenInstructionsMenu()
+    {
+        this.PlayButtonPressedAudio();
+        this.InstructionsMenu.SetActive(true);
+        this.MainMenu.SetActive(false);
+    }
+
     public void OpenCoopMenu()
     {
         this.PlayButtonPressedAudio();
@@ -171,6 +179,7 @@ public class MenuController : MonoBehaviour {
         this.SinglePlayerMenu.SetActive(false);
         this.CoopMenu.SetActive(false);
         this.DeathmatchMenu.SetActive(false);
+        this.InstructionsMenu.SetActive(false);
         this.MainMenu.SetActive(true);
     }
 

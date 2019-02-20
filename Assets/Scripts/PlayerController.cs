@@ -100,6 +100,7 @@ public class PlayerController : CharacterBase {
         this.OnRespawn += (sender, e) => 
         {
             SfxHelper.PlayFromResourceAtCamera(ResourceNames.RespawnAudioClip);
+            this.EmitDeathParticles(true);
         };
 
         this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon, false);
@@ -118,7 +119,14 @@ public class PlayerController : CharacterBase {
 	{
         if (this.PlayerSettings.PointingDeviceData.swipeDirection.Tap)
         {
-            this.Fire(this.PlayerSettings.PointingDeviceData.secondPressPosition);
+            if ((this.rigidBody.position - (Vector2)Camera.main.ScreenToWorldPoint(this.PlayerSettings.PointingDeviceData.secondPressPosition)).magnitude < MagicNumbers.PlayerTapRadius)
+            {
+                this.Fire(Vector2.zero);
+            }
+            else
+            {
+                this.Fire(this.PlayerSettings.PointingDeviceData.secondPressPosition);
+            }
         }
 
         if (Input.GetKeyDown(this.PlayerSettings.FireKey)) 
@@ -136,43 +144,46 @@ public class PlayerController : CharacterBase {
             this.PlayerSettings.PointingDeviceData.swipeVelocity = 10000;
         }
 
-        if (Input.GetKey(KeyCode.K))
+        if (GameRules.IsTestMode)
         {
-            var toDestroy = GameObject.FindGameObjectsWithTag(TagNames.Badguy);
-            foreach (var t in toDestroy)
+            if (Input.GetKey(KeyCode.K))
             {
-                var badguy = t.GetComponent<BadguyController>();
-                if (badguy != null)
+                var toDestroy = GameObject.FindGameObjectsWithTag(TagNames.Badguy);
+                foreach (var t in toDestroy)
                 {
-                    badguy.AddDamage(int.MaxValue, false);
-                }
+                    var badguy = t.GetComponent<BadguyController>();
+                    if (badguy != null)
+                    {
+                        badguy.AddDamage(int.MaxValue, false);
+                    }
 
-                var pod = t.GetComponent<EnemyPodController>();
-                if (pod != null)
-                {
-                    pod.Touch();
+                    var pod = t.GetComponent<EnemyPodController>();
+                    if (pod != null)
+                    {
+                        pod.Touch();
+                    }
                 }
             }
-        }
 
-        if (Input.GetKey(KeyCode.L))
-        {
-            var weapons = new[] { "Smg", "Shotgun", "Plasma Gun", "Laser Rifle", "Rocket Launcher", "Grenade Launcher" };
-            var index = System.Array.IndexOf(weapons, this.PlayerSettings.SelectedWeapon);
-            index = (index + 1) % weapons.Length;
-            GameObject.Destroy(this.weapon);
-            this.PlayerSettings.SelectedWeapon = weapons.ElementAt(index);
-            this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon, !this.isFacingRight);
-        }
+            if (Input.GetKey(KeyCode.L))
+            {
+                var weapons = new[] { "Rocket Launcher" };// Fireable.AllWeaponResourceNames;
+                var index = System.Array.IndexOf(weapons, this.PlayerSettings.SelectedWeapon);
+                index = (index + 1) % weapons.Length;
+                GameObject.Destroy(this.weapon);
+                this.PlayerSettings.SelectedWeapon = weapons.ElementAt(index);
+                this.InstantiateWeapon(this.PlayerSettings.SelectedWeapon, !this.isFacingRight);
+            }
 
-        if (Input.GetKey(KeyCode.J))
-        {
-            SceneManager.LoadScene(LevelRepository.Next().SceneName);
-        }
+            if (Input.GetKey(KeyCode.J))
+            {
+                SceneManager.LoadScene(LevelRepository.Next().SceneName);
+            }
 
-        if (Input.GetKey(KeyCode.O))
-        {
-            this.AddDamage(this.health, false);
+            if (Input.GetKey(KeyCode.O))
+            {
+                this.AddDamage(this.health, false);
+            }
         }
 
         if (this.PlayerSettings.PointingDeviceData.hasAction)

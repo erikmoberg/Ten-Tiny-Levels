@@ -159,7 +159,7 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
         if (this.health <= 0 && !this.IsDying)
         {
             this.IsDying = true;
-            this.EmitDeathParticles();
+            this.EmitDeathParticles(false);
             
             this.NumberOfLives--;
             this.gameObject.SetActive(false);
@@ -185,7 +185,7 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
         return new Color(128, 255, 0);
     }
 
-    public void EmitDeathParticles()
+    public void EmitDeathParticles(bool up)
     {
         var particlesInstance = Instantiate(Resources.Load<ParticleSystem>(this.DeathParticleSystemName), this.transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as ParticleSystem;
 
@@ -193,12 +193,17 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
         var xOffset = (int)spriteRect.x;
         var width = spriteRect.width;
         var height = spriteRect.height;
+        var main = particlesInstance.main;
+        if (up)
+        {
+            main.gravityModifier = 1;
+        }
+        
         for (var i = 0; i < width; i++)
         {
             for (var j = 0; j < height; j++)
             {
                 var pixelColor = this.spriteRenderer.sprite.texture.GetPixel(xOffset + i, j);
-                var main = particlesInstance.main;
                 main.startColor = pixelColor;
                 if (main.startColor.color.a != 0 && i % 2 == 0)
                 {

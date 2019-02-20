@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class EnemyPodController : MonoBehaviour
 {
@@ -11,8 +12,16 @@ public class EnemyPodController : MonoBehaviour
 
     // set to false to prevent player from capturing the object right away, such as jump on head
     private bool canTouch = false;
-    private bool isAlive = true;
+    public bool isAlive = true;
     private string weapon;
+
+    public bool IsAlive
+    {
+        get
+        {
+            return this.isAlive;
+        }
+    }
 
     void Start()
     {
@@ -90,10 +99,11 @@ public class EnemyPodController : MonoBehaviour
 
     private IEnumerator SetCanTouch()
     {
-        var layer = this.gameObject.layer;
-        this.gameObject.layer = LayerMask.NameToLayer(LayerNames.OnlyLevel);
-        yield return new WaitForSeconds(0.5f);
-        this.gameObject.layer = layer;
+        //var layer = this.gameObject.layer;
+        //this.gameObject.layer = LayerMask.NameToLayer(LayerNames.OnlyLevel);
+        //yield return new WaitForSeconds(0.5f);
+        //this.gameObject.layer = layer;
+        yield return new WaitForSeconds(0f);
         this.canTouch = true;
     }
 
@@ -122,6 +132,8 @@ public class EnemyPodController : MonoBehaviour
                 main.startColor = new ParticleSystem.MinMaxGradient(Color.yellow, Color.red);
                 particlesInstance.Emit(1);
             }
+
+            this.gameObject.tag = TagNames.Removing;
 
             Destroy(particlesInstance.gameObject, 10);
 

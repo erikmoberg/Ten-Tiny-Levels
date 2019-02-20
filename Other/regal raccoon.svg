@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.0 r15299"
-   sodipodi:docname="regal raccoon.svg">
+   sodipodi:docname="regal raccoon.svg"
+   inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Other\logo.png"
+   inkscape:export-xdpi="89.809998"
+   inkscape:export-ydpi="89.809998">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="-1474.2534"
-     inkscape:cy="-441.64029"
+     inkscape:zoom="0.98994952"
+     inkscape:cx="-3195.7024"
+     inkscape:cy="-1708.8005"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -199,151 +202,6 @@
          y="394.82867"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.71689987px;line-height:29.38080215px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#000000;fill-opacity:1;stroke-width:0.34080097"
          id="tspan4863">GAMES</tspan></text>
-    <path
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -210.02563,383.91013 c 6.51596,-1.08952 15.94549,-6.84061 24.28495,-14.81142 1.40324,-1.34121 2.55134,-2.55862 2.55134,-2.70535 0,-0.14673 -1.06306,-0.47029 -2.36235,-0.71901 -4.06368,-0.77791 -14.30534,-3.41774 -17.85936,-4.60333 -4.59598,-1.53318 -6.13913,-2.50654 -10.46433,-6.60053 -4.22239,-3.99668 -5.3355,-4.52185 -8.88225,-4.19065 -4.20932,0.39308 -7.16072,2.12571 -8.47623,4.97605 -2.13455,4.62495 0.54013,15.53566 5.40274,22.03917 3.73567,4.99629 9.94484,7.59501 15.80549,6.61507 z"
-       id="path4493-8-6"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
-    <path
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.95332837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -237.53325,395.37004 c -2.28925,-0.55469 -4.42743,-2.26891 -5.56148,-4.45874 -0.9596,-1.85297 -1.27965,-3.5564 -1.07488,-5.72087 0.1472,-1.55579 0.33686,-2.20897 0.75571,-2.60259 l 0.32503,-0.30544 6.21901,-0.0373 c 3.87161,-0.0232 6.50315,0.0148 6.97175,0.10074 1.23071,0.22568 1.90295,0.63948 2.28953,1.40937 0.30372,0.60484 0.33382,0.81721 0.33115,2.33577 -0.003,1.9359 -0.20509,2.85438 -0.98303,4.47676 -1.20741,2.51802 -3.09629,4.20956 -5.37917,4.81717 -0.89771,0.23893 -2.87735,0.23137 -3.89362,-0.0149 z"
-       id="path4529-8"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
-    <g
-       id="g4588-3"
-       transform="matrix(0.36429167,0,0,0.63978944,-274.00163,283.51382)"
-       style="fill:#000000;fill-opacity:1"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998">
-      <path
-         transform="matrix(1,0,0,1.6720197,0,-55.233562)"
-         inkscape:transform-center-y="-6.0956548"
-         inkscape:transform-center-x="1.249222e-006"
-         d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.5707963"
-         sodipodi:arg1="0.52359878"
-         sodipodi:r2="7.2913656"
-         sodipodi:r1="14.582731"
-         sodipodi:cy="74.899025"
-         sodipodi:cx="97.820648"
-         sodipodi:sides="3"
-         id="path4533-6"
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:type="star" />
-      <path
-         transform="matrix(1,0,0,1.6720197,17.639788,-55.19602)"
-         inkscape:transform-center-y="-6.0956548"
-         inkscape:transform-center-x="1.249222e-006"
-         d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.5707963"
-         sodipodi:arg1="0.52359878"
-         sodipodi:r2="7.2913656"
-         sodipodi:r1="14.582731"
-         sodipodi:cy="74.899025"
-         sodipodi:cx="97.820648"
-         sodipodi:sides="3"
-         id="path4533-8-9"
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:type="star" />
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path4533-8-0-1"
-         d="m 92.773358,82.19039 h -12.69636 l 0.06735,-36.573921 z"
-         inkscape:transform-center-y="-6.0956548"
-         inkscape:transform-center-x="1.249222e-006"
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path4533-8-0-2-9"
-         d="m 119.89587,82.07565 h 12.69636 l -0.0673,-36.57392 z"
-         inkscape:transform-center-y="-6.0956548"
-         inkscape:transform-center-x="-1.249222e-006"
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <path
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -262.29098,383.61657 c -6.51596,-1.08952 -15.94551,-6.84061 -24.28498,-14.81142 -1.40323,-1.34121 -2.55133,-2.55862 -2.55133,-2.70535 0,-0.14673 1.06305,-0.47029 2.36235,-0.71901 4.06368,-0.77791 14.30535,-3.41774 17.85937,-4.60333 4.59599,-1.53318 6.13913,-2.50654 10.46433,-6.60053 4.22239,-3.99668 5.33551,-4.52184 8.88225,-4.19065 4.20932,0.39308 7.16072,2.12572 8.47623,4.97605 2.13455,4.62495 -0.54013,15.53566 -5.40274,22.03917 -3.73567,4.99629 -9.94483,7.59501 -15.80548,6.61507 z"
-       id="path4493-6"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
-    <circle
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4510-4-5-5"
-       cx="-251.41818"
-       cy="363.90442"
-       r="7.1246004"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
-    <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4510-4-5"
-       cx="-253.77591"
-       cy="360.47137"
-       r="1.5"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
-    <g
-       id="g5089"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4529-8-8"
-         d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4529-8-8-2"
-         d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
-         style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <circle
-       style="opacity:1;fill:#000006;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4510-4-5-5-6"
-       cx="-220.99391"
-       cy="363.95102"
-       r="7.1246004"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
-    <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4510-4-5-1"
-       cx="-223.35162"
-       cy="360.51797"
-       r="1.5"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
-    <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4510-4-5-1-9"
-       cx="-240.90547"
-       cy="385.19897"
-       r="1.5"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998" />
     <rect
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.3334341;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4485-4"
@@ -485,21 +343,580 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.71689987px;line-height:29.38080406px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.34080097"
          id="tspan4863-3">GAMES</tspan></text>
     <g
-       transform="matrix(-1,0,0,1,-470.75713,-0.34856652)"
-       id="g5089-4"
-       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
-       inkscape:export-xdpi="89.809998"
-       inkscape:export-ydpi="89.809998">
+       id="g4566">
       <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
          inkscape:connector-curvature="0"
-         id="path4529-8-8-9"
-         d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         id="path4493-8-6"
+         d="m -210.02563,383.91013 c 6.51596,-1.08952 15.94549,-6.84061 24.28495,-14.81142 1.40324,-1.34121 2.55134,-2.55862 2.55134,-2.70535 0,-0.14673 -1.06306,-0.47029 -2.36235,-0.71901 -4.06368,-0.77791 -14.30534,-3.41774 -17.85936,-4.60333 -4.59598,-1.53318 -6.13913,-2.50654 -10.46433,-6.60053 -4.22239,-3.99668 -5.3355,-4.52185 -8.88225,-4.19065 -4.20932,0.39308 -7.16072,2.12571 -8.47623,4.97605 -2.13455,4.62495 0.54013,15.53566 5.40274,22.03917 3.73567,4.99629 9.94484,7.59501 15.80549,6.61507 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
          inkscape:connector-curvature="0"
-         id="path4529-8-8-2-1"
-         d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
-         style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         id="path4529-8"
+         d="m -237.53325,395.37004 c -2.28925,-0.55469 -4.42743,-2.26891 -5.56148,-4.45874 -0.9596,-1.85297 -1.27965,-3.5564 -1.07488,-5.72087 0.1472,-1.55579 0.33686,-2.20897 0.75571,-2.60259 l 0.32503,-0.30544 6.21901,-0.0373 c 3.87161,-0.0232 6.50315,0.0148 6.97175,0.10074 1.23071,0.22568 1.90295,0.63948 2.28953,1.40937 0.30372,0.60484 0.33382,0.81721 0.33115,2.33577 -0.003,1.9359 -0.20509,2.85438 -0.98303,4.47676 -1.20741,2.51802 -3.09629,4.20956 -5.37917,4.81717 -0.89771,0.23893 -2.87735,0.23137 -3.89362,-0.0149 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.95332837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         style="fill:#000000;fill-opacity:1"
+         transform="matrix(0.36429167,0,0,0.63978944,-274.00163,283.51382)"
+         id="g4588-3">
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4533-6"
+           sodipodi:sides="3"
+           sodipodi:cx="97.820648"
+           sodipodi:cy="74.899025"
+           sodipodi:r1="14.582731"
+           sodipodi:r2="7.2913656"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           transform="matrix(1,0,0,1.6720197,0,-55.233562)" />
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4533-8-9"
+           sodipodi:sides="3"
+           sodipodi:cx="97.820648"
+           sodipodi:cy="74.899025"
+           sodipodi:r1="14.582731"
+           sodipodi:r2="7.2913656"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           transform="matrix(1,0,0,1.6720197,17.639788,-55.19602)" />
+        <path
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           d="m 92.773358,82.19039 h -12.69636 l 0.06735,-36.573921 z"
+           id="path4533-8-0-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-x="-1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           d="m 119.89587,82.07565 h 12.69636 l -0.0673,-36.57392 z"
+           id="path4533-8-0-2-9"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         inkscape:connector-curvature="0"
+         id="path4493-6"
+         d="m -262.29098,383.61657 c -6.51596,-1.08952 -15.94551,-6.84061 -24.28498,-14.81142 -1.40323,-1.34121 -2.55133,-2.55862 -2.55133,-2.70535 0,-0.14673 1.06305,-0.47029 2.36235,-0.71901 4.06368,-0.77791 14.30535,-3.41774 17.85937,-4.60333 4.59599,-1.53318 6.13913,-2.50654 10.46433,-6.60053 4.22239,-3.99668 5.33551,-4.52184 8.88225,-4.19065 4.20932,0.39308 7.16072,2.12572 8.47623,4.97605 2.13455,4.62495 -0.54013,15.53566 -5.40274,22.03917 -3.73567,4.99629 -9.94483,7.59501 -15.80548,6.61507 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="7.1246004"
+         cy="363.90442"
+         cx="-251.41818"
+         id="path4510-4-5-5"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="360.47137"
+         cx="-253.77591"
+         id="path4510-4-5"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         id="g5089">
+        <path
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
+           id="path4529-8-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
+           id="path4529-8-8-2"
+           inkscape:connector-curvature="0" />
+      </g>
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="7.1246004"
+         cy="363.95102"
+         cx="-220.99391"
+         id="path4510-4-5-5-6"
+         style="opacity:1;fill:#000006;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="360.51797"
+         cx="-223.35162"
+         id="path4510-4-5-1"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="385.19897"
+         cx="-240.90547"
+         id="path4510-4-5-1-9"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         id="g5089-4"
+         transform="matrix(-1,0,0,1,-470.75713,-0.34856652)">
+        <path
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
+           id="path4529-8-8-9"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
+           id="path4529-8-8-2-1"
+           inkscape:connector-curvature="0" />
+      </g>
     </g>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#292829;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4543"
+       cx="-445.7948"
+       cy="570.14941"
+       r="60.670181"
+       inkscape:export-xdpi="45.32"
+       inkscape:export-ydpi="45.32"
+       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png" />
+    <g
+       transform="translate(-210.44907,214.45341)"
+       id="g4566-6"
+       inkscape:export-xdpi="45.32"
+       inkscape:export-ydpi="45.32"
+       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png">
+      <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         inkscape:connector-curvature="0"
+         id="path4493-8-6-00"
+         d="m -210.02563,383.91013 c 6.51596,-1.08952 15.94549,-6.84061 24.28495,-14.81142 1.40324,-1.34121 2.55134,-2.55862 2.55134,-2.70535 0,-0.14673 -1.06306,-0.47029 -2.36235,-0.71901 -4.06368,-0.77791 -14.30534,-3.41774 -17.85936,-4.60333 -4.59598,-1.53318 -6.13913,-2.50654 -10.46433,-6.60053 -4.22239,-3.99668 -5.3355,-4.52185 -8.88225,-4.19065 -4.20932,0.39308 -7.16072,2.12571 -8.47623,4.97605 -2.13455,4.62495 0.54013,15.53566 5.40274,22.03917 3.73567,4.99629 9.94484,7.59501 15.80549,6.61507 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         inkscape:connector-curvature="0"
+         id="path4529-8-6"
+         d="m -237.53325,395.37004 c -2.28925,-0.55469 -4.42743,-2.26891 -5.56148,-4.45874 -0.9596,-1.85297 -1.27965,-3.5564 -1.07488,-5.72087 0.1472,-1.55579 0.33686,-2.20897 0.75571,-2.60259 l 0.32503,-0.30544 6.21901,-0.0373 c 3.87161,-0.0232 6.50315,0.0148 6.97175,0.10074 1.23071,0.22568 1.90295,0.63948 2.28953,1.40937 0.30372,0.60484 0.33382,0.81721 0.33115,2.33577 -0.003,1.9359 -0.20509,2.85438 -0.98303,4.47676 -1.20741,2.51802 -3.09629,4.20956 -5.37917,4.81717 -0.89771,0.23893 -2.87735,0.23137 -3.89362,-0.0149 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.95332837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         style="fill:#000000;fill-opacity:1"
+         transform="matrix(0.36429167,0,0,0.63978944,-274.00163,283.51382)"
+         id="g4588-3-93">
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4533-6-2"
+           sodipodi:sides="3"
+           sodipodi:cx="97.820648"
+           sodipodi:cy="74.899025"
+           sodipodi:r1="14.582731"
+           sodipodi:r2="7.2913656"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           transform="matrix(1,0,0,1.6720197,0,-55.233562)" />
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4533-8-9-9"
+           sodipodi:sides="3"
+           sodipodi:cx="97.820648"
+           sodipodi:cy="74.899025"
+           sodipodi:r1="14.582731"
+           sodipodi:r2="7.2913656"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           transform="matrix(1,0,0,1.6720197,17.639788,-55.19602)" />
+        <path
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           d="m 92.773358,82.19039 h -12.69636 l 0.06735,-36.573921 z"
+           id="path4533-8-0-1-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-x="-1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           d="m 119.89587,82.07565 h 12.69636 l -0.0673,-36.57392 z"
+           id="path4533-8-0-2-9-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         inkscape:connector-curvature="0"
+         id="path4493-6-9"
+         d="m -262.29098,383.61657 c -6.51596,-1.08952 -15.94551,-6.84061 -24.28498,-14.81142 -1.40323,-1.34121 -2.55133,-2.55862 -2.55133,-2.70535 0,-0.14673 1.06305,-0.47029 2.36235,-0.71901 4.06368,-0.77791 14.30535,-3.41774 17.85937,-4.60333 4.59599,-1.53318 6.13913,-2.50654 10.46433,-6.60053 4.22239,-3.99668 5.33551,-4.52184 8.88225,-4.19065 4.20932,0.39308 7.16072,2.12572 8.47623,4.97605 2.13455,4.62495 -0.54013,15.53566 -5.40274,22.03917 -3.73567,4.99629 -9.94483,7.59501 -15.80548,6.61507 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="7.1246004"
+         cy="363.90442"
+         cx="-251.41818"
+         id="path4510-4-5-5-62"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="360.47137"
+         cx="-253.77591"
+         id="path4510-4-5-6"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         id="g5089-3">
+        <path
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
+           id="path4529-8-8-7"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
+           id="path4529-8-8-2-0"
+           inkscape:connector-curvature="0" />
+      </g>
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="7.1246004"
+         cy="363.95102"
+         cx="-220.99391"
+         id="path4510-4-5-5-6-5"
+         style="opacity:1;fill:#000006;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="360.51797"
+         cx="-223.35162"
+         id="path4510-4-5-1-84"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="385.19897"
+         cx="-240.90547"
+         id="path4510-4-5-1-9-4"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         id="g5089-4-9"
+         transform="matrix(-1,0,0,1,-470.75713,-0.34856652)">
+        <path
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
+           id="path4529-8-8-9-1"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
+           id="path4529-8-8-2-1-7"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:21.21850204px;line-height:13.26156521px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.53046256"
+       x="-367.91074"
+       y="539.95148"
+       id="text4855-0"
+       inkscape:export-xdpi="45.32"
+       inkscape:export-ydpi="45.32"
+       inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"><tspan
+         sodipodi:role="line"
+         x="-367.91074"
+         y="539.95148"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#000000;fill-opacity:1;stroke-width:0.53046256"
+         id="tspan4857-4">REGAL</tspan><tspan
+         sodipodi:role="line"
+         x="-367.91074"
+         y="585.68323"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#000000;fill-opacity:1;stroke-width:0.53046256"
+         id="tspan4861-2">RACCOON</tspan><tspan
+         sodipodi:role="line"
+         x="-367.91074"
+         y="631.41492"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#000000;fill-opacity:1;stroke-width:0.53046256"
+         id="tspan4863-2">GAMES</tspan></text>
+    <rect
+       style="opacity:1;fill:#000009;fill-opacity:1;stroke:#ffffff;stroke-width:1.19934714;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4865-2"
+       width="639.05658"
+       height="224.9429"
+       x="-944.93903"
+       y="647.43933" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#292829;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4543-2"
+       cx="-821.13"
+       cy="755.59381"
+       r="60.670181"
+       inkscape:export-xdpi="45.32"
+       inkscape:export-ydpi="45.32"
+       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\splash.png" />
+    <g
+       transform="translate(-585.78426,399.89787)"
+       id="g4566-6-0"
+       inkscape:export-xdpi="45.32"
+       inkscape:export-ydpi="45.32"
+       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\splash.png">
+      <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         inkscape:connector-curvature="0"
+         id="path4493-8-6-00-3"
+         d="m -210.02563,383.91013 c 6.51596,-1.08952 15.94549,-6.84061 24.28495,-14.81142 1.40324,-1.34121 2.55134,-2.55862 2.55134,-2.70535 0,-0.14673 -1.06306,-0.47029 -2.36235,-0.71901 -4.06368,-0.77791 -14.30534,-3.41774 -17.85936,-4.60333 -4.59598,-1.53318 -6.13913,-2.50654 -10.46433,-6.60053 -4.22239,-3.99668 -5.3355,-4.52185 -8.88225,-4.19065 -4.20932,0.39308 -7.16072,2.12571 -8.47623,4.97605 -2.13455,4.62495 0.54013,15.53566 5.40274,22.03917 3.73567,4.99629 9.94484,7.59501 15.80549,6.61507 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         inkscape:connector-curvature="0"
+         id="path4529-8-6-8"
+         d="m -237.53325,395.37004 c -2.28925,-0.55469 -4.42743,-2.26891 -5.56148,-4.45874 -0.9596,-1.85297 -1.27965,-3.5564 -1.07488,-5.72087 0.1472,-1.55579 0.33686,-2.20897 0.75571,-2.60259 l 0.32503,-0.30544 6.21901,-0.0373 c 3.87161,-0.0232 6.50315,0.0148 6.97175,0.10074 1.23071,0.22568 1.90295,0.63948 2.28953,1.40937 0.30372,0.60484 0.33382,0.81721 0.33115,2.33577 -0.003,1.9359 -0.20509,2.85438 -0.98303,4.47676 -1.20741,2.51802 -3.09629,4.20956 -5.37917,4.81717 -0.89771,0.23893 -2.87735,0.23137 -3.89362,-0.0149 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.95332837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         style="fill:#000000;fill-opacity:1"
+         transform="matrix(0.36429167,0,0,0.63978944,-274.00163,283.51382)"
+         id="g4588-3-93-4">
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4533-6-2-6"
+           sodipodi:sides="3"
+           sodipodi:cx="97.820648"
+           sodipodi:cy="74.899025"
+           sodipodi:r1="14.582731"
+           sodipodi:r2="7.2913656"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           transform="matrix(1,0,0,1.6720197,0,-55.233562)" />
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.84729147;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4533-8-9-9-2"
+           sodipodi:sides="3"
+           sodipodi:cx="97.820648"
+           sodipodi:cy="74.899025"
+           sodipodi:r1="14.582731"
+           sodipodi:r2="7.2913656"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 110.44966,82.190391 -25.258028,0 12.629016,-21.874097 z"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           transform="matrix(1,0,0,1.6720197,17.639788,-55.19602)" />
+        <path
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-x="1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           d="m 92.773358,82.19039 h -12.69636 l 0.06735,-36.573921 z"
+           id="path4533-8-0-1-4-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.56093407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-x="-1.249222e-006"
+           inkscape:transform-center-y="-6.0956548"
+           d="m 119.89587,82.07565 h 12.69636 l -0.0673,-36.57392 z"
+           id="path4533-8-0-2-9-7-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <path
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         inkscape:connector-curvature="0"
+         id="path4493-6-9-9"
+         d="m -262.29098,383.61657 c -6.51596,-1.08952 -15.94551,-6.84061 -24.28498,-14.81142 -1.40323,-1.34121 -2.55133,-2.55862 -2.55133,-2.70535 0,-0.14673 1.06305,-0.47029 2.36235,-0.71901 4.06368,-0.77791 14.30535,-3.41774 17.85937,-4.60333 4.59599,-1.53318 6.13913,-2.50654 10.46433,-6.60053 4.22239,-3.99668 5.33551,-4.52184 8.88225,-4.19065 4.20932,0.39308 7.16072,2.12572 8.47623,4.97605 2.13455,4.62495 -0.54013,15.53566 -5.40274,22.03917 -3.73567,4.99629 -9.94483,7.59501 -15.80548,6.61507 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8.35327339;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="7.1246004"
+         cy="363.90442"
+         cx="-251.41818"
+         id="path4510-4-5-5-62-2"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="360.47137"
+         cx="-253.77591"
+         id="path4510-4-5-6-0"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         id="g5089-3-6">
+        <path
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
+           id="path4529-8-8-7-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
+           id="path4529-8-8-2-0-0"
+           inkscape:connector-curvature="0" />
+      </g>
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="7.1246004"
+         cy="363.95102"
+         cx="-220.99391"
+         id="path4510-4-5-5-6-5-9"
+         style="opacity:1;fill:#000006;fill-opacity:1;stroke:#ffffff;stroke-width:0.75079882;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="360.51797"
+         cx="-223.35162"
+         id="path4510-4-5-1-84-5"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         r="1.5"
+         cy="385.19897"
+         cx="-240.90547"
+         id="path4510-4-5-1-9-4-6"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11243498;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89.809998"
+         inkscape:export-xdpi="89.809998"
+         inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"
+         id="g5089-4-9-0"
+         transform="matrix(-1,0,0,1,-470.75713,-0.34856652)">
+        <path
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -272.02472,324.19373 c 3.7692,-1.10788 8.28716,-0.41493 11.75137,1.80236 2.93132,1.87622 4.81415,4.06978 6.3234,7.36693 1.08481,2.36996 1.35557,3.4716 1.07882,4.38944 l -0.21476,0.71223 -8.95172,5.24012 c -5.57286,3.26216 -9.40559,5.4018 -10.15411,5.66846 -1.96585,0.70036 -3.28193,0.66326 -4.48235,-0.12642 -0.94309,-0.62035 -1.16367,-0.902 -2.42619,-3.09766 -1.61008,-2.79875 -2.08413,-4.29394 -2.31342,-7.28608 -0.35586,-4.64397 0.96184,-8.66244 3.75256,-11.44386 1.09741,-1.09374 3.96313,-2.7337 5.63642,-3.22549 z"
+           id="path4529-8-8-9-1-4"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:1;fill:#000009;fill-opacity:1;stroke:none;stroke-width:3.49994016;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -271.37822,327.30796 c 2.67818,-0.78718 5.88836,-0.29483 8.3498,1.28066 2.08283,1.33312 3.42064,2.89173 4.49303,5.23449 0.7708,1.68395 0.96318,2.4667 0.76655,3.11886 l -0.1526,0.50607 -6.36055,3.72329 c -3.95973,2.3179 -6.68303,3.8382 -7.21488,4.02768 -1.39682,0.49762 -2.33194,0.47126 -3.18488,-0.0898 -0.67011,-0.44077 -0.82685,-0.6409 -1.72391,-2.201 -1.14402,-1.98861 -1.48085,-3.051 -1.64377,-5.17703 -0.25286,-3.29973 0.68343,-6.15502 2.66633,-8.13131 0.77976,-0.77713 2.81596,-1.9424 4.0049,-2.29184 z"
+           id="path4529-8-8-2-1-7-6"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:21.21850204px;line-height:13.26156521px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.53046256;"
+       x="-743.24591"
+       y="725.39594"
+       id="text4855-0-6"
+       inkscape:export-xdpi="45.32"
+       inkscape:export-ydpi="45.32"
+       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\splash.png"><tspan
+         sodipodi:role="line"
+         x="-743.24591"
+         y="725.39594"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256;"
+         id="tspan4857-4-9">REGAL</tspan><tspan
+         sodipodi:role="line"
+         x="-743.24591"
+         y="771.12769"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256;"
+         id="tspan4861-2-0">RACCOON</tspan><tspan
+         sodipodi:role="line"
+         x="-743.24591"
+         y="816.85938"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256;"
+         id="tspan4863-2-6">GAMES</tspan></text>
   </g>
 </svg>

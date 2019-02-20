@@ -11,7 +11,7 @@ public class IdleMonitorController : MonoBehaviour
 
     void Update()
     {
-        if (GameRules.IsTestMode)
+        if (true || GameRules.IsTestMode)
         {
             return;
         }

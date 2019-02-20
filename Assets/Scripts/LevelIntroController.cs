@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using System.Linq;
 
 public class LevelIntroController : MonoBehaviour {
@@ -17,7 +16,7 @@ public class LevelIntroController : MonoBehaviour {
 
 	void Start () {        
         var textObject = gameObject.GetComponentsInChildren<Text>().FirstOrDefault();
-        textObject.text = "LEVEL " + (GameState.CurrentLevel + 1) + "\r\n" + LevelRepository.AllLevels[GameState.CurrentLevel].Title.ToUpperInvariant();
+        textObject.text = "LEVEL " + (GameState.Difficulty + 1) + ":" + (GameState.CurrentLevel + 1) + "\r\n" + LevelRepository.AllLevels[GameState.CurrentLevel].Title.ToUpperInvariant();
         Destroy(gameObject, GetWaitTimeUntilSpawnSeconds());
     }
 }
