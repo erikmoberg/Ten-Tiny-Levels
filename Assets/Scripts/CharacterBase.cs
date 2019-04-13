@@ -13,7 +13,7 @@ public abstract class CharacterBase : MonoBehaviour, IDamageable
 
     Collider2D mainCollider;
 
-    private float MaxJumpSpeed = 5000f;
+    protected float MaxJumpSpeed = 5000f;
     protected float MaxRunSpeed = 70f;
     protected bool isFacingRight = true;
 	protected int startingHealth = 20;

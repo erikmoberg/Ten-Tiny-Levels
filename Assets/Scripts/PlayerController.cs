@@ -119,7 +119,8 @@ public class PlayerController : CharacterBase {
 	{
         if (this.PlayerSettings.PointingDeviceData.swipeDirection.Tap)
         {
-            if ((this.rigidBody.position - (Vector2)Camera.main.ScreenToWorldPoint(this.PlayerSettings.PointingDeviceData.secondPressPosition)).magnitude < MagicNumbers.PlayerTapRadius)
+            var isClose = (this.rigidBody.position - (Vector2)Camera.main.ScreenToWorldPoint(this.PlayerSettings.PointingDeviceData.secondPressPosition)).magnitude < MagicNumbers.PlayerTapRadius;
+            if (isClose || GameState.GameMode != GameMode.SinglePlayer)
             {
                 this.Fire(Vector2.zero);
             }
@@ -177,6 +178,16 @@ public class PlayerController : CharacterBase {
 
             if (Input.GetKey(KeyCode.J))
             {
+                if (GameState.CurrentLevel < LevelRepository.AllLevels.Length - 1)
+                {
+                    GameState.CurrentLevel++;
+                }
+                else
+                {
+                    GameState.CurrentLevel = 0;
+                    GameState.Difficulty += 1;
+                }
+
                 SceneManager.LoadScene(LevelRepository.Next().SceneName);
             }
 
@@ -232,7 +243,7 @@ public class PlayerController : CharacterBase {
 
 		if (moveVertical > 0)
 		{
-            this.Jump(this.PlayerSettings.PointingDeviceData.swipeVelocity * this.swipeJumpSpeedMultiplier);
+            this.Jump(this.MaxJumpSpeed);
 		}
 
 		if (moveVertical < 0) 

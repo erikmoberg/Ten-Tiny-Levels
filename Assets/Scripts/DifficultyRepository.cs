@@ -6,7 +6,7 @@ public static class DifficultyRepository
     {
         if (tag == TagNames.Badguy)
         {
-            return 5 + (Factor * 2);
+            return (int)(5 + (Factor * 1.5));
         }
         else if (tag == TagNames.Player)
         {

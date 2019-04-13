@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994952"
-     inkscape:cx="-3195.7024"
-     inkscape:cy="-1708.8005"
+     inkscape:zoom="0.35000001"
+     inkscape:cx="-3495.482"
+     inkscape:cy="-1807.4378"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,7 +38,9 @@
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -689,24 +691,24 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:21.21850204px;line-height:13.26156521px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.53046256"
        x="-367.91074"
-       y="539.95148"
+       y="542.24292"
        id="text4855-0"
        inkscape:export-xdpi="45.32"
        inkscape:export-ydpi="45.32"
        inkscape:export-filename="D:\Backup\Projekt\Ten-Tiny-Levels\Assets\Sprites\splash-transparent.png"><tspan
          sodipodi:role="line"
          x="-367.91074"
-         y="539.95148"
+         y="542.24292"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#000000;fill-opacity:1;stroke-width:0.53046256"
          id="tspan4857-4">REGAL</tspan><tspan
          sodipodi:role="line"
          x="-367.91074"
-         y="585.68323"
+         y="587.97467"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#000000;fill-opacity:1;stroke-width:0.53046256"
          id="tspan4861-2">RACCOON</tspan><tspan
          sodipodi:role="line"
          x="-367.91074"
-         y="631.41492"
+         y="633.70636"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#000000;fill-opacity:1;stroke-width:0.53046256"
          id="tspan4863-2">GAMES</tspan></text>
     <rect
@@ -717,20 +719,20 @@
        x="-944.93903"
        y="647.43933" />
     <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#292829;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.62599993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4543-2"
        cx="-821.13"
        cy="755.59381"
        r="60.670181"
        inkscape:export-xdpi="45.32"
        inkscape:export-ydpi="45.32"
-       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\splash.png" />
+       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\logo2.png" />
     <g
        transform="translate(-585.78426,399.89787)"
        id="g4566-6-0"
        inkscape:export-xdpi="45.32"
        inkscape:export-ydpi="45.32"
-       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\splash.png">
+       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\logo2.png">
       <path
          inkscape:export-ydpi="89.809998"
          inkscape:export-xdpi="89.809998"
@@ -896,27 +898,27 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:21.21850204px;line-height:13.26156521px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.53046256;"
+       style="font-style:normal;font-weight:normal;font-size:21.21850204px;line-height:13.26156521px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.53046256"
        x="-743.24591"
-       y="725.39594"
+       y="727.68982"
        id="text4855-0-6"
        inkscape:export-xdpi="45.32"
        inkscape:export-ydpi="45.32"
-       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\splash.png"><tspan
+       inkscape:export-filename="D:\Backup\Projekt\Github\erikmoberg.net\ttl-assets\logo2.png"><tspan
          sodipodi:role="line"
          x="-743.24591"
-         y="725.39594"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256;"
+         y="727.68982"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256"
          id="tspan4857-4-9">REGAL</tspan><tspan
          sodipodi:role="line"
          x="-743.24591"
-         y="771.12769"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256;"
+         y="773.42157"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256"
          id="tspan4861-2-0">RACCOON</tspan><tspan
          sodipodi:role="line"
          x="-743.24591"
-         y="816.85938"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256;"
+         y="819.15326"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.92441559px;line-height:45.73172379px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;fill:#ffffff;fill-opacity:1;stroke-width:0.53046256"
          id="tspan4863-2-6">GAMES</tspan></text>
   </g>
 </svg>
