@@ -36,6 +36,14 @@ public class PlayerPodController : MonoBehaviour {
         }
 	}
 
+    public void KillCharacter()
+    {
+        if (this.Character != null)
+        {
+            this.Character.NumberOfLives = 0;
+        }
+    }
+
     IEnumerator IndicateCanRespawn()
     {
         while (!this.playerHasRespawned)

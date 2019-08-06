@@ -96,16 +96,19 @@ public class GeneralScript : MonoBehaviour {
 
     IEnumerator HandlePlayerDeath()
     {
-        if (GameState.GameMode == GameMode.TwoPlayerDeathmatch && Player1.NumberOfLives > 0 && Player2.NumberOfLives > 0)
+        if (GameState.GameMode == GameMode.TwoPlayerDeathmatch)
         {
             yield return new WaitForSeconds(2f);
-            
-            // Randomize new weapons
-            PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon =
-                PlayerSettingsRepository.PlayerTwoSettings.SelectedWeapon =
-                Fireable.AllWeaponResourceNames[UnityEngine.Random.Range(0, Fireable.AllWeaponResourceNames.Length - 1)];
 
-            SceneManager.LoadScene(LevelRepository.NextRandomized().SceneName);
+            if (Player1.NumberOfLives > 0 && Player2.NumberOfLives > 0)
+            {
+                // Randomize new weapons
+                PlayerSettingsRepository.PlayerOneSettings.SelectedWeapon =
+                    PlayerSettingsRepository.PlayerTwoSettings.SelectedWeapon =
+                    Fireable.AllWeaponResourceNames[UnityEngine.Random.Range(0, Fireable.AllWeaponResourceNames.Length)];
+
+                SceneManager.LoadScene(LevelRepository.NextRandomized().SceneName);
+            }
         }
     }
 

@@ -59,10 +59,11 @@ public class PlayerSpawnLocation : SpawnLocation {
     {
         if (gameMode == GameMode.TwoPlayerDeathmatch)
         {
-            var topMargin = 80;
-            var bottomMargin = 50;
-            var y = Camera.main.ScreenToWorldPoint(new Vector2(0, UnityEngine.Random.Range(bottomMargin, Camera.main.pixelHeight - topMargin))).y;
-            this.transform.position = new Vector2(this.transform.position.x, y);
+            var topMargin = 32;
+            var bottomMargin = 16;
+            var minY = Camera.main.ScreenToWorldPoint(new Vector2(0, 0)).y + bottomMargin;
+            var maxY = Camera.main.ScreenToWorldPoint(new Vector2(0, Camera.main.pixelHeight)).y - topMargin;
+            this.transform.position = new Vector2(this.transform.position.x, UnityEngine.Random.Range(minY, maxY));
         }
     }
 }

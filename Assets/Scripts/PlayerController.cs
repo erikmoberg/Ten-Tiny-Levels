@@ -145,7 +145,7 @@ public class PlayerController : CharacterBase {
             this.PlayerSettings.PointingDeviceData.swipeVelocity = 10000;
         }
 
-        if (GameRules.IsTestMode)
+        if (GameRules.IsTestMode && PlayerSettingsRepository.PlayerOneSettings == this.PlayerSettings)
         {
             if (Input.GetKey(KeyCode.K))
             {

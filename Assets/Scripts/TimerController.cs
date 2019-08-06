@@ -118,6 +118,14 @@ public class TimerController : MonoBehaviour
                     player.NumberOfLives = 0;
                     player.AddDamage(int.MaxValue, false);
                 }
+                else
+                {
+                    var pod = t.GetComponent<PlayerPodController>();
+                    if (pod != null)
+                    {
+                        pod.KillCharacter();
+                    }
+                }
             }
         }
     }
